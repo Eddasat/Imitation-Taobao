@@ -1,0 +1,2975 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>淘宝Demo</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<!-- 顶层导航区 -->
+	<nav class="top">
+		<div class="top-container">
+			<ul class="nav-left">
+				<li>
+					<select>
+						<option>-请选择-</option>
+						<option>全球</option>
+						<option selected>中国大陆</option>
+						<option>香港</option>
+						<option>台湾</option>
+						<option>澳门</option>
+						<option>韩国</option>
+						<option>马来西亚</option>
+						<option>澳大利亚</option>
+						<option>新加坡</option>
+						<option>新西兰</option>
+						<option>加拿大</option>
+						<option>美国</option>
+						<option>日本</option>
+					</select>
+				</li>
+				<li><a href="javascript:;" class="login">亲，请登录</a></li>
+				<li><a href="javascript:;">免费注册</a></li>
+				<li><a href="javascript:;">手机逛淘宝</a></li>
+			</ul>
+			<ul class="nav-right">
+				<li class="show-list">
+					<a href="javascript:;">我的淘宝<i class="icon fa fa-angle-down"></i></a>
+					<ul class="hide-list left">
+						<li><a href="javascript:;">已买到的宝贝</a></li>
+						<li><a href="javascript:;">我的足迹</a></li>
+					</ul>
+				</li>
+				<li><a href="javascript:;"><i class="car fa fa-shopping-cart"></i>购物车(0)<i class="null"></i></a></li>
+				<li class="show-list">
+					<a href="javascript:;">收藏夹<i class="icon fa fa-angle-down"></i></a>
+					<ul class="hide-list left">
+						<li><a href="javascript:;">收藏的宝贝</a></li>
+						<li><a href="javascript:;">收藏的店铺</a></li>
+					</ul>
+				</li>
+				<li><a href="javascript:;"><i class="null"></i>商品分类<i class="null"></i></a></li>
+				<li class="show-list">
+					<a href="javascript:;">卖家中心<i class="icon fa fa-angle-down"></i></a>
+					<ul class="hide-list left">
+						<li><a href="https://openshop.taobao.com/index.htm">免费开店</a></li>
+						<li><a href="javascript:;">已卖出的宝贝</a></li>
+						<li><a href="javascript:;">出售中的宝贝</a></li>
+						<li><a href="https://fuwu.taobao.com/">卖家服务市场</a></li>
+						<li><a href="https://daxue.taobao.com/">卖家培训中心</a></li>
+						<li><a href="https://healthcenter.taobao.com/home/health_home.htm">体检中心</a></li>
+						<li><a href="javascript:;">问商友</a></li>
+					</ul>
+				</li>
+				<li class="show-list">
+					<a href="javascript:;">联系客服<i class="icon fa fa-angle-down"></i></a>
+					<ul class="hide-list right">
+						<li><a href="https://consumerservice.taobao.com/online-help">消费者客服</a></li>
+						<li><a href="https://helpcenter.taobao.com/index">卖家客服</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!-- banner区 -->
+	<header>
+		<div class="header-container">
+			<div class="logo">
+				<a href="#"><img src="img/logo.png"></a>
+			</div>
+			<div id="header-search" class="search">
+				<form action="https://s.taobao.com/search" class="search-form">
+					<input type="text" name="q" autocomplete="off" placeholder="大码遮肚减龄 两件套" class="input">
+					<input type="submit" value="搜 索" class="search-btn">
+				</form>
+            	<ul class="search-layer">
+               	 	<li class="search-layer-item">两件套洋气俏皮夏</li>
+               	 	<li class="search-layer-item">鞋子男夏季运动鞋</li>
+               	 	<li class="search-layer-item">很仙的两件套 显瘦</li>
+               	 	<li class="search-layer-item">女鞋夏高跟</li>
+               	 	<li class="search-layer-item">颜九的店 平价</li>
+               	 	<li class="search-layer-item">不一样的情侣装裙子</li>
+               	 	<li class="search-layer-item">我凭感觉活着t恤</li>
+               	 	<li class="search-layer-item">携手一生手印画</li>
+               	 	<li class="search-layer-item">妈妈款连衣裙 洋气夏</li>
+               	 	<li class="search-layer-item">真空被子压缩收纳袋</li>
+            	</ul>
+        	</div>
+		</div>
+	</header>
+	<!-- 中心部分 -->
+	<section class="main">
+		<!-- 导航栏 -->
+		<nav class="nav">
+			<div class="nav-container">
+				<ul class="nav-big">
+					<li><a href="https://www.tmall.com/" target="_blank">天猫</a></li>
+					<li><a href="https://ju.taobao.com/" target="_blank">聚划算</a></li>
+					<li><a href="https://chaoshi.tmall.com/" target="_blank">天猫超市</a></li>
+				</ul>
+				<ul class="nav-small">
+					<li>丨</li>
+					<li><a href="https://qiang.taobao.com/" target="_blank">淘抢购</a></li>
+					<li><a href="https://3c.tmall.com/" target="_blank">电器城</a></li>
+					<li><a href="https://sf.taobao.com/" target="_blank">司法拍卖</a></li>
+					<li><a href="https://good.tmall.com/" target="_blank">淘宝心选</a></li>
+					<li><a href="https://www.taobao.com/markets/xt/znfp" target="_blank">兴农扶贫</a></li>
+					<li>丨</li>
+					<li><a href="https://www.fliggy.com/" target="_blank">飞猪旅行</a></li>
+					<li><a href="https://zhineng.tmall.com/" target="_blank">智能生活</a></li>
+					<li><a href="https://suning.tmall.com/" target="_blank">苏宁易购</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!-- 中部 -->
+		<section class="middle">
+			<div class="middle-container">
+				<!-- 左侧菜单 -->
+				<div id="middle-category" class="middle-category">
+					<a href="###" target="_blank" class="category-title"><i class="fa fa-bars"></i>商品分类</a>
+                <ul class="category-list">
+                    <li class="dropdown">家用电器<span class="dropdown-arrow">&gt;</span>
+                    	<ul class="dropdown-layer">
+                    		<li>
+                    			<span>电器&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">手机</a>
+                    			<a href="javascript:;">对讲机</a>
+                    			<a href="javascript:;">以旧换新</a>
+                    			<a href="javascript:;">手机维修</a>
+                    		</li><br/><br/>
+                    		<li>
+                    			<span>冰箱&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">充话费/流量</a>
+                    			<a href="javascript:;">170选号</a>
+                    			<a href="javascript:;">合约机</a>
+                    			<a href="javascript:;">办套餐</a>
+                    			<a href="javascript:;">选号码</a>
+                    			<a href="javascript:;">固话宽带</a>
+                    			<a href="javascript:;">京东通信</a>
+                    			<a href="javascript:;">中国移动</a>
+                    			<a href="javascript:;">中国联通</a>
+                    			<a href="javascript:;" class="br">中国电信</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>洗衣机&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">手机壳</a>
+                    			<a href="javascript:;">贴膜</a>
+                    			<a href="javascript:;">手机存储卡</a>
+                    			<a href="javascript:;">数据线</a>
+                    			<a href="javascript:;">充电器</a>
+                    			<a href="javascript:;">手机耳机</a>
+                    			<a href="javascript:;">创意配件</a>
+                    			<a href="javascript:;">手机饰品</a>
+                    			<a href="javascript:;">手机电池</a>
+                    			<a href="javascript:;">苹果周边</a>
+                    			<a href="javascript:;" class="br">移动电源</a>
+                    			<a href="javascript:;">蓝牙耳机</a>
+                    			<a href="javascript:;">手机支架</a>
+                    			<a href="javascript:;">车载配件</a>
+                    			<a href="javascript:;">拍照配件</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>电脑&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">数码相机</a>
+                    			<a href="javascript:;">单电/微单相机</a>
+                    			<a href="javascript:;">单反相机</a>
+                    			<a href="javascript:;">拍立得</a>
+                    			<a href="javascript:;">运动相机</a>
+                    			<a href="javascript:;">摄像机</a>
+                    			<a href="javascript:;">镜头</a>
+                    			<a href="javascript:;">户外器材</a>
+                    			<a href="javascript:;">影棚器材</a>
+                    			<a href="javascript:;" class="br">冲印服务</a>
+                    			<a href="javascript:;">数码相框</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>微波炉&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">储存卡</a>
+                    			<a href="javascript:;">三脚架/云台</a>
+                    			<a href="javascript:;">相机包</a>
+                    			<a href="javascript:;">滤镜</a>
+                    			<a href="javascript:;">闪光灯/手柄</a>
+                    			<a href="javascript:;">相机清洁/贴膜</a>
+                    			<a href="javascript:;">机身附件</a>
+                    			<a href="javascript:;">镜头附件</a>
+                    			<a href="javascript:;">读卡器</a>
+                    			<a href="javascript:;" class="br">支架</a>
+                    			<a href="javascript:;">电池/充电器</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>开水壶&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">耳机/耳麦</a>
+                    			<a href="javascript:;">音箱/音响</a>
+                    			<a href="javascript:;">便携/无线音箱</a>
+                    			<a href="javascript:;">收音机</a>
+                    			<a href="javascript:;">麦克风</a>
+                    			<a href="javascript:;">MP3/MP4</a>
+                    			<a href="javascript:;">专业音频</a>
+                    		</li><br/><br/>
+                    		<li>
+                    			<span>吹风机&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">智能手环</a>
+                    			<a href="javascript:;">智能手表</a>
+                    			<a href="javascript:;">智能眼镜</a>
+                    			<a href="javascript:;">智能机器人</a>
+                    			<a href="javascript:;">运动跟踪器</a>
+                    			<a href="javascript:;">健康监测</a>
+                    			<a href="javascript:;">智能配饰</a>
+                    			<a href="javascript:;">智能家居</a>
+                    			<a href="javascript:;">体感车</a>
+                    			<a href="javascript:;" class="br">无人机</a>
+                    			<a href="javascript:;">其他配件</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>缝纫机&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">学生平板</a>
+                    			<a href="javascript:;">点读机/笔</a>
+                    			<a href="javascript:;">早教益智</a>
+                    			<a href="javascript:;">录音笔</a>
+                    			<a href="javascript:;">电纸书</a>
+                    			<a href="javascript:;">电子词典</a>
+                    			<a href="javascript:;">复读机</a>
+                    		</li><br/>
+                    	</ul>
+                    </li>
+                    <li class="dropdown">手机、运营商、数码<span class="dropdown-arrow">&gt;</span>
+                    	<ul class="dropdown-layer">
+                    		<li>
+                    			<span>手机通讯&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">手机</a>
+                    			<a href="javascript:;">对讲机</a>
+                    			<a href="javascript:;">以旧换新</a>
+                    			<a href="javascript:;">手机维修</a>
+                    		</li><br/><br/>
+                    		<li>
+                    			<span>运营商&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">充话费/流量</a>
+                    			<a href="javascript:;">170选号</a>
+                    			<a href="javascript:;">合约机</a>
+                    			<a href="javascript:;">办套餐</a>
+                    			<a href="javascript:;">选号码</a>
+                    			<a href="javascript:;">固话宽带</a>
+                    			<a href="javascript:;">京东通信</a>
+                    			<a href="javascript:;">中国移动</a>
+                    			<a href="javascript:;">中国联通</a>
+                    			<a href="javascript:;" class="br">中国电信</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>手机配件&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">手机壳</a>
+                    			<a href="javascript:;">贴膜</a>
+                    			<a href="javascript:;">手机存储卡</a>
+                    			<a href="javascript:;">数据线</a>
+                    			<a href="javascript:;">充电器</a>
+                    			<a href="javascript:;">手机耳机</a>
+                    			<a href="javascript:;">创意配件</a>
+                    			<a href="javascript:;">手机饰品</a>
+                    			<a href="javascript:;">手机电池</a>
+                    			<a href="javascript:;">苹果周边</a>
+                    			<a href="javascript:;" class="br">移动电源</a>
+                    			<a href="javascript:;">蓝牙耳机</a>
+                    			<a href="javascript:;">手机支架</a>
+                    			<a href="javascript:;">车载配件</a>
+                    			<a href="javascript:;">拍照配件</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>摄影摄像&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">数码相机</a>
+                    			<a href="javascript:;">单电/微单相机</a>
+                    			<a href="javascript:;">单反相机</a>
+                    			<a href="javascript:;">拍立得</a>
+                    			<a href="javascript:;">运动相机</a>
+                    			<a href="javascript:;">摄像机</a>
+                    			<a href="javascript:;">镜头</a>
+                    			<a href="javascript:;">户外器材</a>
+                    			<a href="javascript:;">影棚器材</a>
+                    			<a href="javascript:;" class="br">冲印服务</a>
+                    			<a href="javascript:;">数码相框</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>数码配件&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">储存卡</a>
+                    			<a href="javascript:;">三脚架/云台</a>
+                    			<a href="javascript:;">相机包</a>
+                    			<a href="javascript:;">滤镜</a>
+                    			<a href="javascript:;">闪光灯/手柄</a>
+                    			<a href="javascript:;">相机清洁/贴膜</a>
+                    			<a href="javascript:;">机身附件</a>
+                    			<a href="javascript:;">镜头附件</a>
+                    			<a href="javascript:;">读卡器</a>
+                    			<a href="javascript:;" class="br">支架</a>
+                    			<a href="javascript:;">电池/充电器</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>影音娱乐&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">耳机/耳麦</a>
+                    			<a href="javascript:;">音箱/音响</a>
+                    			<a href="javascript:;">便携/无线音箱</a>
+                    			<a href="javascript:;">收音机</a>
+                    			<a href="javascript:;">麦克风</a>
+                    			<a href="javascript:;">MP3/MP4</a>
+                    			<a href="javascript:;">专业音频</a>
+                    		</li><br/><br/>
+                    		<li>
+                    			<span>智能设备&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">智能手环</a>
+                    			<a href="javascript:;">智能手表</a>
+                    			<a href="javascript:;">智能眼镜</a>
+                    			<a href="javascript:;">智能机器人</a>
+                    			<a href="javascript:;">运动跟踪器</a>
+                    			<a href="javascript:;">健康监测</a>
+                    			<a href="javascript:;">智能配饰</a>
+                    			<a href="javascript:;">智能家居</a>
+                    			<a href="javascript:;">体感车</a>
+                    			<a href="javascript:;" class="br">无人机</a>
+                    			<a href="javascript:;">其他配件</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>电子教育&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">学生平板</a>
+                    			<a href="javascript:;">点读机/笔</a>
+                    			<a href="javascript:;">早教益智</a>
+                    			<a href="javascript:;">录音笔</a>
+                    			<a href="javascript:;">电纸书</a>
+                    			<a href="javascript:;">电子词典</a>
+                    			<a href="javascript:;">复读机</a>
+                    		</li><br/>
+                    	</ul>
+                    </li>
+                    <li class="dropdown">电脑、办公<span class="dropdown-arrow">&gt;</span>
+                    	<ul class="dropdown-layer">
+                    		<li>
+                    			<span>联想&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">手机</a>
+                    			<a href="javascript:;">对讲机</a>
+                    			<a href="javascript:;">以旧换新</a>
+                    			<a href="javascript:;">手机维修</a>
+                    		</li><br/><br/>
+                    		<li>
+                    			<span>苹果&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">充话费/流量</a>
+                    			<a href="javascript:;">170选号</a>
+                    			<a href="javascript:;">合约机</a>
+                    			<a href="javascript:;">办套餐</a>
+                    			<a href="javascript:;">选号码</a>
+                    			<a href="javascript:;">固话宽带</a>
+                    			<a href="javascript:;">京东通信</a>
+                    			<a href="javascript:;">中国移动</a>
+                    			<a href="javascript:;">中国联通</a>
+                    			<a href="javascript:;" class="br">中国电信</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>显示屏&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">手机壳</a>
+                    			<a href="javascript:;">贴膜</a>
+                    			<a href="javascript:;">手机存储卡</a>
+                    			<a href="javascript:;">数据线</a>
+                    			<a href="javascript:;">充电器</a>
+                    			<a href="javascript:;">手机耳机</a>
+                    			<a href="javascript:;">创意配件</a>
+                    			<a href="javascript:;">手机饰品</a>
+                    			<a href="javascript:;">手机电池</a>
+                    			<a href="javascript:;">苹果周边</a>
+                    			<a href="javascript:;" class="br">移动电源</a>
+                    			<a href="javascript:;">蓝牙耳机</a>
+                    			<a href="javascript:;">手机支架</a>
+                    			<a href="javascript:;">车载配件</a>
+                    			<a href="javascript:;">拍照配件</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>戴尔&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">数码相机</a>
+                    			<a href="javascript:;">单电/微单相机</a>
+                    			<a href="javascript:;">单反相机</a>
+                    			<a href="javascript:;">拍立得</a>
+                    			<a href="javascript:;">运动相机</a>
+                    			<a href="javascript:;">摄像机</a>
+                    			<a href="javascript:;">镜头</a>
+                    			<a href="javascript:;">户外器材</a>
+                    			<a href="javascript:;">影棚器材</a>
+                    			<a href="javascript:;" class="br">冲印服务</a>
+                    			<a href="javascript:;">数码相框</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>华硕&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">储存卡</a>
+                    			<a href="javascript:;">三脚架/云台</a>
+                    			<a href="javascript:;">相机包</a>
+                    			<a href="javascript:;">滤镜</a>
+                    			<a href="javascript:;">闪光灯/手柄</a>
+                    			<a href="javascript:;">相机清洁/贴膜</a>
+                    			<a href="javascript:;">机身附件</a>
+                    			<a href="javascript:;">镜头附件</a>
+                    			<a href="javascript:;">读卡器</a>
+                    			<a href="javascript:;" class="br">支架</a>
+                    			<a href="javascript:;">电池/充电器</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>打印机&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">耳机/耳麦</a>
+                    			<a href="javascript:;">音箱/音响</a>
+                    			<a href="javascript:;">便携/无线音箱</a>
+                    			<a href="javascript:;">收音机</a>
+                    			<a href="javascript:;">麦克风</a>
+                    			<a href="javascript:;">MP3/MP4</a>
+                    			<a href="javascript:;">专业音频</a>
+                    		</li><br/><br/>
+                    		<li>
+                    			<span>照相机&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">智能手环</a>
+                    			<a href="javascript:;">智能手表</a>
+                    			<a href="javascript:;">智能眼镜</a>
+                    			<a href="javascript:;">智能机器人</a>
+                    			<a href="javascript:;">运动跟踪器</a>
+                    			<a href="javascript:;">健康监测</a>
+                    			<a href="javascript:;">智能配饰</a>
+                    			<a href="javascript:;">智能家居</a>
+                    			<a href="javascript:;">体感车</a>
+                    			<a href="javascript:;" class="br">无人机</a>
+                    			<a href="javascript:;">其他配件</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>索尼&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">学生平板</a>
+                    			<a href="javascript:;">点读机/笔</a>
+                    			<a href="javascript:;">早教益智</a>
+                    			<a href="javascript:;">录音笔</a>
+                    			<a href="javascript:;">电纸书</a>
+                    			<a href="javascript:;">电子词典</a>
+                    			<a href="javascript:;">复读机</a>
+                    		</li><br/>
+                    	</ul>
+                    </li>
+                    <li class="dropdown">家居、家具、家装、厨具<span class="dropdown-arrow">&gt;</span>
+                    	<ul class="dropdown-layer">
+                    		<li>
+                    			<span>复读机&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">手机</a>
+                    			<a href="javascript:;">对讲机</a>
+                    			<a href="javascript:;">以旧换新</a>
+                    			<a href="javascript:;">手机维修</a>
+                    		</li><br/><br/>
+                    		<li>
+                    			<span>运营商&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">充话费/流量</a>
+                    			<a href="javascript:;">170选号</a>
+                    			<a href="javascript:;">合约机</a>
+                    			<a href="javascript:;">办套餐</a>
+                    			<a href="javascript:;">选号码</a>
+                    			<a href="javascript:;">固话宽带</a>
+                    			<a href="javascript:;">京东通信</a>
+                    			<a href="javascript:;">中国移动</a>
+                    			<a href="javascript:;">中国联通</a>
+                    			<a href="javascript:;" class="br">中国电信</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>MP3&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">手机壳</a>
+                    			<a href="javascript:;">贴膜</a>
+                    			<a href="javascript:;">手机存储卡</a>
+                    			<a href="javascript:;">数据线</a>
+                    			<a href="javascript:;">充电器</a>
+                    			<a href="javascript:;">手机耳机</a>
+                    			<a href="javascript:;">创意配件</a>
+                    			<a href="javascript:;">手机饰品</a>
+                    			<a href="javascript:;">手机电池</a>
+                    			<a href="javascript:;">苹果周边</a>
+                    			<a href="javascript:;" class="br">移动电源</a>
+                    			<a href="javascript:;">蓝牙耳机</a>
+                    			<a href="javascript:;">手机支架</a>
+                    			<a href="javascript:;">车载配件</a>
+                    			<a href="javascript:;">拍照配件</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>乐视&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">数码相机</a>
+                    			<a href="javascript:;">单电/微单相机</a>
+                    			<a href="javascript:;">单反相机</a>
+                    			<a href="javascript:;">拍立得</a>
+                    			<a href="javascript:;">运动相机</a>
+                    			<a href="javascript:;">摄像机</a>
+                    			<a href="javascript:;">镜头</a>
+                    			<a href="javascript:;">户外器材</a>
+                    			<a href="javascript:;">影棚器材</a>
+                    			<a href="javascript:;" class="br">冲印服务</a>
+                    			<a href="javascript:;">数码相框</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>vivo&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">储存卡</a>
+                    			<a href="javascript:;">三脚架/云台</a>
+                    			<a href="javascript:;">相机包</a>
+                    			<a href="javascript:;">滤镜</a>
+                    			<a href="javascript:;">闪光灯/手柄</a>
+                    			<a href="javascript:;">相机清洁/贴膜</a>
+                    			<a href="javascript:;">机身附件</a>
+                    			<a href="javascript:;">镜头附件</a>
+                    			<a href="javascript:;">读卡器</a>
+                    			<a href="javascript:;" class="br">支架</a>
+                    			<a href="javascript:;">电池/充电器</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>oppo&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">耳机/耳麦</a>
+                    			<a href="javascript:;">音箱/音响</a>
+                    			<a href="javascript:;">便携/无线音箱</a>
+                    			<a href="javascript:;">收音机</a>
+                    			<a href="javascript:;">麦克风</a>
+                    			<a href="javascript:;">MP3/MP4</a>
+                    			<a href="javascript:;">专业音频</a>
+                    		</li><br/><br/>
+                    		<li>
+                    			<span>智能&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">智能手环</a>
+                    			<a href="javascript:;">智能手表</a>
+                    			<a href="javascript:;">智能眼镜</a>
+                    			<a href="javascript:;">智能机器人</a>
+                    			<a href="javascript:;">运动跟踪器</a>
+                    			<a href="javascript:;">健康监测</a>
+                    			<a href="javascript:;">智能配饰</a>
+                    			<a href="javascript:;">智能家居</a>
+                    			<a href="javascript:;">体感车</a>
+                    			<a href="javascript:;" class="br">无人机</a>
+                    			<a href="javascript:;">其他配件</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>电子教育&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">学生平板</a>
+                    			<a href="javascript:;">点读机/笔</a>
+                    			<a href="javascript:;">早教益智</a>
+                    			<a href="javascript:;">录音笔</a>
+                    			<a href="javascript:;">电纸书</a>
+                    			<a href="javascript:;">电子词典</a>
+                    			<a href="javascript:;">复读机</a>
+                    		</li><br/>
+                    	</ul>
+                    </li>
+                    <li class="dropdown">男装、女装、童装、内衣<span class="dropdown-arrow">&gt;</span>
+                    	<ul class="dropdown-layer">
+                    		<li>
+                    			<span>手机通讯&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">手机</a>
+                    			<a href="javascript:;">对讲机</a>
+                    			<a href="javascript:;">以旧换新</a>
+                    			<a href="javascript:;">手机维修</a>
+                    		</li><br/><br/>
+                    		<li>
+                    			<span>运营商&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">充话费/流量</a>
+                    			<a href="javascript:;">170选号</a>
+                    			<a href="javascript:;">合约机</a>
+                    			<a href="javascript:;">办套餐</a>
+                    			<a href="javascript:;">选号码</a>
+                    			<a href="javascript:;">固话宽带</a>
+                    			<a href="javascript:;">京东通信</a>
+                    			<a href="javascript:;">中国移动</a>
+                    			<a href="javascript:;">中国联通</a>
+                    			<a href="javascript:;" class="br">中国电信</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>手机配件&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">手机壳</a>
+                    			<a href="javascript:;">贴膜</a>
+                    			<a href="javascript:;">手机存储卡</a>
+                    			<a href="javascript:;">数据线</a>
+                    			<a href="javascript:;">充电器</a>
+                    			<a href="javascript:;">手机耳机</a>
+                    			<a href="javascript:;">创意配件</a>
+                    			<a href="javascript:;">手机饰品</a>
+                    			<a href="javascript:;">手机电池</a>
+                    			<a href="javascript:;">苹果周边</a>
+                    			<a href="javascript:;" class="br">移动电源</a>
+                    			<a href="javascript:;">蓝牙耳机</a>
+                    			<a href="javascript:;">手机支架</a>
+                    			<a href="javascript:;">车载配件</a>
+                    			<a href="javascript:;">拍照配件</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>摄影摄像&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">数码相机</a>
+                    			<a href="javascript:;">单电/微单相机</a>
+                    			<a href="javascript:;">单反相机</a>
+                    			<a href="javascript:;">拍立得</a>
+                    			<a href="javascript:;">运动相机</a>
+                    			<a href="javascript:;">摄像机</a>
+                    			<a href="javascript:;">镜头</a>
+                    			<a href="javascript:;">户外器材</a>
+                    			<a href="javascript:;">影棚器材</a>
+                    			<a href="javascript:;" class="br">冲印服务</a>
+                    			<a href="javascript:;">数码相框</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>数码配件&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">储存卡</a>
+                    			<a href="javascript:;">三脚架/云台</a>
+                    			<a href="javascript:;">相机包</a>
+                    			<a href="javascript:;">滤镜</a>
+                    			<a href="javascript:;">闪光灯/手柄</a>
+                    			<a href="javascript:;">相机清洁/贴膜</a>
+                    			<a href="javascript:;">机身附件</a>
+                    			<a href="javascript:;">镜头附件</a>
+                    			<a href="javascript:;">读卡器</a>
+                    			<a href="javascript:;" class="br">支架</a>
+                    			<a href="javascript:;">电池/充电器</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>影音娱乐&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">耳机/耳麦</a>
+                    			<a href="javascript:;">音箱/音响</a>
+                    			<a href="javascript:;">便携/无线音箱</a>
+                    			<a href="javascript:;">收音机</a>
+                    			<a href="javascript:;">麦克风</a>
+                    			<a href="javascript:;">MP3/MP4</a>
+                    			<a href="javascript:;">专业音频</a>
+                    		</li><br/><br/>
+                    		<li>
+                    			<span>智能设备&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">智能手环</a>
+                    			<a href="javascript:;">智能手表</a>
+                    			<a href="javascript:;">智能眼镜</a>
+                    			<a href="javascript:;">智能机器人</a>
+                    			<a href="javascript:;">运动跟踪器</a>
+                    			<a href="javascript:;">健康监测</a>
+                    			<a href="javascript:;">智能配饰</a>
+                    			<a href="javascript:;">智能家居</a>
+                    			<a href="javascript:;">体感车</a>
+                    			<a href="javascript:;" class="br">无人机</a>
+                    			<a href="javascript:;">其他配件</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>电子教育&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">学生平板</a>
+                    			<a href="javascript:;">点读机/笔</a>
+                    			<a href="javascript:;">早教益智</a>
+                    			<a href="javascript:;">录音笔</a>
+                    			<a href="javascript:;">电纸书</a>
+                    			<a href="javascript:;">电子词典</a>
+                    			<a href="javascript:;">复读机</a>
+                    		</li><br/>
+                    	</ul>
+                    </li>
+                    <li class="dropdown">化妆、清洁、宠物<span class="dropdown-arrow">&gt;</span>
+                    	<ul class="dropdown-layer">
+                    		<li>
+                    			<span>复读机&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">手机</a>
+                    			<a href="javascript:;">对讲机</a>
+                    			<a href="javascript:;">以旧换新</a>
+                    			<a href="javascript:;">手机维修</a>
+                    		</li><br/><br/>
+                    		<li>
+                    			<span>运营商&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">充话费/流量</a>
+                    			<a href="javascript:;">170选号</a>
+                    			<a href="javascript:;">合约机</a>
+                    			<a href="javascript:;">办套餐</a>
+                    			<a href="javascript:;">选号码</a>
+                    			<a href="javascript:;">固话宽带</a>
+                    			<a href="javascript:;">京东通信</a>
+                    			<a href="javascript:;">中国移动</a>
+                    			<a href="javascript:;">中国联通</a>
+                    			<a href="javascript:;" class="br">中国电信</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>MP3&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">手机壳</a>
+                    			<a href="javascript:;">贴膜</a>
+                    			<a href="javascript:;">手机存储卡</a>
+                    			<a href="javascript:;">数据线</a>
+                    			<a href="javascript:;">充电器</a>
+                    			<a href="javascript:;">手机耳机</a>
+                    			<a href="javascript:;">创意配件</a>
+                    			<a href="javascript:;">手机饰品</a>
+                    			<a href="javascript:;">手机电池</a>
+                    			<a href="javascript:;">苹果周边</a>
+                    			<a href="javascript:;" class="br">移动电源</a>
+                    			<a href="javascript:;">蓝牙耳机</a>
+                    			<a href="javascript:;">手机支架</a>
+                    			<a href="javascript:;">车载配件</a>
+                    			<a href="javascript:;">拍照配件</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>乐视&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">数码相机</a>
+                    			<a href="javascript:;">单电/微单相机</a>
+                    			<a href="javascript:;">单反相机</a>
+                    			<a href="javascript:;">拍立得</a>
+                    			<a href="javascript:;">运动相机</a>
+                    			<a href="javascript:;">摄像机</a>
+                    			<a href="javascript:;">镜头</a>
+                    			<a href="javascript:;">户外器材</a>
+                    			<a href="javascript:;">影棚器材</a>
+                    			<a href="javascript:;" class="br">冲印服务</a>
+                    			<a href="javascript:;">数码相框</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>vivo&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">储存卡</a>
+                    			<a href="javascript:;">三脚架/云台</a>
+                    			<a href="javascript:;">相机包</a>
+                    			<a href="javascript:;">滤镜</a>
+                    			<a href="javascript:;">闪光灯/手柄</a>
+                    			<a href="javascript:;">相机清洁/贴膜</a>
+                    			<a href="javascript:;">机身附件</a>
+                    			<a href="javascript:;">镜头附件</a>
+                    			<a href="javascript:;">读卡器</a>
+                    			<a href="javascript:;" class="br">支架</a>
+                    			<a href="javascript:;">电池/充电器</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>oppo&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">耳机/耳麦</a>
+                    			<a href="javascript:;">音箱/音响</a>
+                    			<a href="javascript:;">便携/无线音箱</a>
+                    			<a href="javascript:;">收音机</a>
+                    			<a href="javascript:;">麦克风</a>
+                    			<a href="javascript:;">MP3/MP4</a>
+                    			<a href="javascript:;">专业音频</a>
+                    		</li><br/><br/>
+                    		<li>
+                    			<span>智能&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">智能手环</a>
+                    			<a href="javascript:;">智能手表</a>
+                    			<a href="javascript:;">智能眼镜</a>
+                    			<a href="javascript:;">智能机器人</a>
+                    			<a href="javascript:;">运动跟踪器</a>
+                    			<a href="javascript:;">健康监测</a>
+                    			<a href="javascript:;">智能配饰</a>
+                    			<a href="javascript:;">智能家居</a>
+                    			<a href="javascript:;">体感车</a>
+                    			<a href="javascript:;" class="br">无人机</a>
+                    			<a href="javascript:;">其他配件</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>电子&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">学生平板</a>
+                    			<a href="javascript:;">点读机/笔</a>
+                    			<a href="javascript:;">早教益智</a>
+                    			<a href="javascript:;">录音笔</a>
+                    			<a href="javascript:;">电纸书</a>
+                    			<a href="javascript:;">电子词典</a>
+                    			<a href="javascript:;">复读机</a>
+                    		</li><br/>
+                    	</ul>
+                    </li>
+                    <li class="dropdown">运动户外、钟表<span class="dropdown-arrow">&gt;</span>
+                    	<ul class="dropdown-layer">
+                    		<li>
+                    			<span>复读机&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">手机</a>
+                    			<a href="javascript:;">对讲机</a>
+                    			<a href="javascript:;">以旧换新</a>
+                    			<a href="javascript:;">手机维修</a>
+                    		</li><br/><br/>
+                    		<li>
+                    			<span>运营商&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">充话费/流量</a>
+                    			<a href="javascript:;">170选号</a>
+                    			<a href="javascript:;">合约机</a>
+                    			<a href="javascript:;">办套餐</a>
+                    			<a href="javascript:;">选号码</a>
+                    			<a href="javascript:;">固话宽带</a>
+                    			<a href="javascript:;">京东通信</a>
+                    			<a href="javascript:;">中国移动</a>
+                    			<a href="javascript:;">中国联通</a>
+                    			<a href="javascript:;" class="br">中国电信</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>MP3&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">手机壳</a>
+                    			<a href="javascript:;">贴膜</a>
+                    			<a href="javascript:;">手机存储卡</a>
+                    			<a href="javascript:;">数据线</a>
+                    			<a href="javascript:;">充电器</a>
+                    			<a href="javascript:;">手机耳机</a>
+                    			<a href="javascript:;">创意配件</a>
+                    			<a href="javascript:;">手机饰品</a>
+                    			<a href="javascript:;">手机电池</a>
+                    			<a href="javascript:;">苹果周边</a>
+                    			<a href="javascript:;" class="br">移动电源</a>
+                    			<a href="javascript:;">蓝牙耳机</a>
+                    			<a href="javascript:;">手机支架</a>
+                    			<a href="javascript:;">车载配件</a>
+                    			<a href="javascript:;">拍照配件</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>乐视&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">数码相机</a>
+                    			<a href="javascript:;">单电/微单相机</a>
+                    			<a href="javascript:;">单反相机</a>
+                    			<a href="javascript:;">拍立得</a>
+                    			<a href="javascript:;">运动相机</a>
+                    			<a href="javascript:;">摄像机</a>
+                    			<a href="javascript:;">镜头</a>
+                    			<a href="javascript:;">户外器材</a>
+                    			<a href="javascript:;">影棚器材</a>
+                    			<a href="javascript:;" class="br">冲印服务</a>
+                    			<a href="javascript:;">数码相框</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>vivo&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">储存卡</a>
+                    			<a href="javascript:;">三脚架/云台</a>
+                    			<a href="javascript:;">相机包</a>
+                    			<a href="javascript:;">滤镜</a>
+                    			<a href="javascript:;">闪光灯/手柄</a>
+                    			<a href="javascript:;">相机清洁/贴膜</a>
+                    			<a href="javascript:;">机身附件</a>
+                    			<a href="javascript:;">镜头附件</a>
+                    			<a href="javascript:;">读卡器</a>
+                    			<a href="javascript:;" class="br">支架</a>
+                    			<a href="javascript:;">电池/充电器</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>oppo&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">耳机/耳麦</a>
+                    			<a href="javascript:;">音箱/音响</a>
+                    			<a href="javascript:;">便携/无线音箱</a>
+                    			<a href="javascript:;">收音机</a>
+                    			<a href="javascript:;">麦克风</a>
+                    			<a href="javascript:;">MP3/MP4</a>
+                    			<a href="javascript:;">专业音频</a>
+                    		</li><br/><br/>
+                    		<li>
+                    			<span>智能&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">智能手环</a>
+                    			<a href="javascript:;">智能手表</a>
+                    			<a href="javascript:;">智能眼镜</a>
+                    			<a href="javascript:;">智能机器人</a>
+                    			<a href="javascript:;">运动跟踪器</a>
+                    			<a href="javascript:;">健康监测</a>
+                    			<a href="javascript:;">智能配饰</a>
+                    			<a href="javascript:;">智能家居</a>
+                    			<a href="javascript:;">体感车</a>
+                    			<a href="javascript:;" class="br">无人机</a>
+                    			<a href="javascript:;">其他配件</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>电子&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">学生平板</a>
+                    			<a href="javascript:;">点读机/笔</a>
+                    			<a href="javascript:;">早教益智</a>
+                    			<a href="javascript:;">录音笔</a>
+                    			<a href="javascript:;">电纸书</a>
+                    			<a href="javascript:;">电子词典</a>
+                    			<a href="javascript:;">复读机</a>
+                    		</li><br/>
+                    	</ul>
+                    </li>
+                    <li class="dropdown">汽车、汽车用品<span class="dropdown-arrow">&gt;</span>
+                    	<ul class="dropdown-layer">
+                    		<li>
+                    			<span>手机通讯&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">手机</a>
+                    			<a href="javascript:;">对讲机</a>
+                    			<a href="javascript:;">以旧换新</a>
+                    			<a href="javascript:;">手机维修</a>
+                    		</li><br/><br/>
+                    		<li>
+                    			<span>运营商&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">充话费/流量</a>
+                    			<a href="javascript:;">170选号</a>
+                    			<a href="javascript:;">合约机</a>
+                    			<a href="javascript:;">办套餐</a>
+                    			<a href="javascript:;">选号码</a>
+                    			<a href="javascript:;">固话宽带</a>
+                    			<a href="javascript:;">京东通信</a>
+                    			<a href="javascript:;">中国移动</a>
+                    			<a href="javascript:;">中国联通</a>
+                    			<a href="javascript:;" class="br">中国电信</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>手机配件&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">手机壳</a>
+                    			<a href="javascript:;">贴膜</a>
+                    			<a href="javascript:;">手机存储卡</a>
+                    			<a href="javascript:;">数据线</a>
+                    			<a href="javascript:;">充电器</a>
+                    			<a href="javascript:;">手机耳机</a>
+                    			<a href="javascript:;">创意配件</a>
+                    			<a href="javascript:;">手机饰品</a>
+                    			<a href="javascript:;">手机电池</a>
+                    			<a href="javascript:;">苹果周边</a>
+                    			<a href="javascript:;" class="br">移动电源</a>
+                    			<a href="javascript:;">蓝牙耳机</a>
+                    			<a href="javascript:;">手机支架</a>
+                    			<a href="javascript:;">车载配件</a>
+                    			<a href="javascript:;">拍照配件</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>摄影摄像&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">数码相机</a>
+                    			<a href="javascript:;">单电/微单相机</a>
+                    			<a href="javascript:;">单反相机</a>
+                    			<a href="javascript:;">拍立得</a>
+                    			<a href="javascript:;">运动相机</a>
+                    			<a href="javascript:;">摄像机</a>
+                    			<a href="javascript:;">镜头</a>
+                    			<a href="javascript:;">户外器材</a>
+                    			<a href="javascript:;">影棚器材</a>
+                    			<a href="javascript:;" class="br">冲印服务</a>
+                    			<a href="javascript:;">数码相框</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>数码配件&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">储存卡</a>
+                    			<a href="javascript:;">三脚架/云台</a>
+                    			<a href="javascript:;">相机包</a>
+                    			<a href="javascript:;">滤镜</a>
+                    			<a href="javascript:;">闪光灯/手柄</a>
+                    			<a href="javascript:;">相机清洁/贴膜</a>
+                    			<a href="javascript:;">机身附件</a>
+                    			<a href="javascript:;">镜头附件</a>
+                    			<a href="javascript:;">读卡器</a>
+                    			<a href="javascript:;" class="br">支架</a>
+                    			<a href="javascript:;">电池/充电器</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>影音娱乐&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">耳机/耳麦</a>
+                    			<a href="javascript:;">音箱/音响</a>
+                    			<a href="javascript:;">便携/无线音箱</a>
+                    			<a href="javascript:;">收音机</a>
+                    			<a href="javascript:;">麦克风</a>
+                    			<a href="javascript:;">MP3/MP4</a>
+                    			<a href="javascript:;">专业音频</a>
+                    		</li><br/><br/>
+                    		<li>
+                    			<span>智能设备&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">智能手环</a>
+                    			<a href="javascript:;">智能手表</a>
+                    			<a href="javascript:;">智能眼镜</a>
+                    			<a href="javascript:;">智能机器人</a>
+                    			<a href="javascript:;">运动跟踪器</a>
+                    			<a href="javascript:;">健康监测</a>
+                    			<a href="javascript:;">智能配饰</a>
+                    			<a href="javascript:;">智能家居</a>
+                    			<a href="javascript:;">体感车</a>
+                    			<a href="javascript:;" class="br">无人机</a>
+                    			<a href="javascript:;">其他配件</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>电子教育&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">学生平板</a>
+                    			<a href="javascript:;">点读机/笔</a>
+                    			<a href="javascript:;">早教益智</a>
+                    			<a href="javascript:;">录音笔</a>
+                    			<a href="javascript:;">电纸书</a>
+                    			<a href="javascript:;">电子词典</a>
+                    			<a href="javascript:;">复读机</a>
+                    		</li><br/>
+                    	</ul>
+                    </li>
+                    <li class="dropdown">母婴、玩具乐器<span class="dropdown-arrow">&gt;</span>
+                    	<ul class="dropdown-layer">
+                    		<li>
+                    			<span>复读机&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">手机</a>
+                    			<a href="javascript:;">对讲机</a>
+                    			<a href="javascript:;">以旧换新</a>
+                    			<a href="javascript:;">手机维修</a>
+                    		</li><br/><br/>
+                    		<li>
+                    			<span>运营商&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">充话费/流量</a>
+                    			<a href="javascript:;">170选号</a>
+                    			<a href="javascript:;">合约机</a>
+                    			<a href="javascript:;">办套餐</a>
+                    			<a href="javascript:;">选号码</a>
+                    			<a href="javascript:;">固话宽带</a>
+                    			<a href="javascript:;">京东通信</a>
+                    			<a href="javascript:;">中国移动</a>
+                    			<a href="javascript:;">中国联通</a>
+                    			<a href="javascript:;" class="br">中国电信</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>MP3&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">手机壳</a>
+                    			<a href="javascript:;">贴膜</a>
+                    			<a href="javascript:;">手机存储卡</a>
+                    			<a href="javascript:;">数据线</a>
+                    			<a href="javascript:;">充电器</a>
+                    			<a href="javascript:;">手机耳机</a>
+                    			<a href="javascript:;">创意配件</a>
+                    			<a href="javascript:;">手机饰品</a>
+                    			<a href="javascript:;">手机电池</a>
+                    			<a href="javascript:;">苹果周边</a>
+                    			<a href="javascript:;" class="br">移动电源</a>
+                    			<a href="javascript:;">蓝牙耳机</a>
+                    			<a href="javascript:;">手机支架</a>
+                    			<a href="javascript:;">车载配件</a>
+                    			<a href="javascript:;">拍照配件</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>乐视&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">数码相机</a>
+                    			<a href="javascript:;">单电/微单相机</a>
+                    			<a href="javascript:;">单反相机</a>
+                    			<a href="javascript:;">拍立得</a>
+                    			<a href="javascript:;">运动相机</a>
+                    			<a href="javascript:;">摄像机</a>
+                    			<a href="javascript:;">镜头</a>
+                    			<a href="javascript:;">户外器材</a>
+                    			<a href="javascript:;">影棚器材</a>
+                    			<a href="javascript:;" class="br">冲印服务</a>
+                    			<a href="javascript:;">数码相框</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>vivo&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">储存卡</a>
+                    			<a href="javascript:;">三脚架/云台</a>
+                    			<a href="javascript:;">相机包</a>
+                    			<a href="javascript:;">滤镜</a>
+                    			<a href="javascript:;">闪光灯/手柄</a>
+                    			<a href="javascript:;">相机清洁/贴膜</a>
+                    			<a href="javascript:;">机身附件</a>
+                    			<a href="javascript:;">镜头附件</a>
+                    			<a href="javascript:;">读卡器</a>
+                    			<a href="javascript:;" class="br">支架</a>
+                    			<a href="javascript:;">电池/充电器</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>oppo&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">耳机/耳麦</a>
+                    			<a href="javascript:;">音箱/音响</a>
+                    			<a href="javascript:;">便携/无线音箱</a>
+                    			<a href="javascript:;">收音机</a>
+                    			<a href="javascript:;">麦克风</a>
+                    			<a href="javascript:;">MP3/MP4</a>
+                    			<a href="javascript:;">专业音频</a>
+                    		</li><br/><br/>
+                    		<li>
+                    			<span>智能&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">智能手环</a>
+                    			<a href="javascript:;">智能手表</a>
+                    			<a href="javascript:;">智能眼镜</a>
+                    			<a href="javascript:;">智能机器人</a>
+                    			<a href="javascript:;">运动跟踪器</a>
+                    			<a href="javascript:;">健康监测</a>
+                    			<a href="javascript:;">智能配饰</a>
+                    			<a href="javascript:;">智能家居</a>
+                    			<a href="javascript:;">体感车</a>
+                    			<a href="javascript:;" class="br">无人机</a>
+                    			<a href="javascript:;">其他配件</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>电子&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">学生平板</a>
+                    			<a href="javascript:;">点读机/笔</a>
+                    			<a href="javascript:;">早教益智</a>
+                    			<a href="javascript:;">录音笔</a>
+                    			<a href="javascript:;">电纸书</a>
+                    			<a href="javascript:;">电子词典</a>
+                    			<a href="javascript:;">复读机</a>
+                    		</li><br/>
+                    	</ul>
+                    </li>
+                    <li class="dropdown">食品、酒类、生鲜、特产<span class="dropdown-arrow">&gt;</span>
+                    	<ul class="dropdown-layer">
+                    		<li>
+                    			<span>手机通讯&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">手机</a>
+                    			<a href="javascript:;">对讲机</a>
+                    			<a href="javascript:;">以旧换新</a>
+                    			<a href="javascript:;">手机维修</a>
+                    		</li><br/><br/>
+                    		<li>
+                    			<span>运营商&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">充话费/流量</a>
+                    			<a href="javascript:;">170选号</a>
+                    			<a href="javascript:;">合约机</a>
+                    			<a href="javascript:;">办套餐</a>
+                    			<a href="javascript:;">选号码</a>
+                    			<a href="javascript:;">固话宽带</a>
+                    			<a href="javascript:;">京东通信</a>
+                    			<a href="javascript:;">中国移动</a>
+                    			<a href="javascript:;">中国联通</a>
+                    			<a href="javascript:;" class="br">中国电信</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>手机配件&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">手机壳</a>
+                    			<a href="javascript:;">贴膜</a>
+                    			<a href="javascript:;">手机存储卡</a>
+                    			<a href="javascript:;">数据线</a>
+                    			<a href="javascript:;">充电器</a>
+                    			<a href="javascript:;">手机耳机</a>
+                    			<a href="javascript:;">创意配件</a>
+                    			<a href="javascript:;">手机饰品</a>
+                    			<a href="javascript:;">手机电池</a>
+                    			<a href="javascript:;">苹果周边</a>
+                    			<a href="javascript:;" class="br">移动电源</a>
+                    			<a href="javascript:;">蓝牙耳机</a>
+                    			<a href="javascript:;">手机支架</a>
+                    			<a href="javascript:;">车载配件</a>
+                    			<a href="javascript:;">拍照配件</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>摄影摄像&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">数码相机</a>
+                    			<a href="javascript:;">单电/微单相机</a>
+                    			<a href="javascript:;">单反相机</a>
+                    			<a href="javascript:;">拍立得</a>
+                    			<a href="javascript:;">运动相机</a>
+                    			<a href="javascript:;">摄像机</a>
+                    			<a href="javascript:;">镜头</a>
+                    			<a href="javascript:;">户外器材</a>
+                    			<a href="javascript:;">影棚器材</a>
+                    			<a href="javascript:;" class="br">冲印服务</a>
+                    			<a href="javascript:;">数码相框</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>数码配件&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">储存卡</a>
+                    			<a href="javascript:;">三脚架/云台</a>
+                    			<a href="javascript:;">相机包</a>
+                    			<a href="javascript:;">滤镜</a>
+                    			<a href="javascript:;">闪光灯/手柄</a>
+                    			<a href="javascript:;">相机清洁/贴膜</a>
+                    			<a href="javascript:;">机身附件</a>
+                    			<a href="javascript:;">镜头附件</a>
+                    			<a href="javascript:;">读卡器</a>
+                    			<a href="javascript:;" class="br">支架</a>
+                    			<a href="javascript:;">电池/充电器</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>影音娱乐&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">耳机/耳麦</a>
+                    			<a href="javascript:;">音箱/音响</a>
+                    			<a href="javascript:;">便携/无线音箱</a>
+                    			<a href="javascript:;">收音机</a>
+                    			<a href="javascript:;">麦克风</a>
+                    			<a href="javascript:;">MP3/MP4</a>
+                    			<a href="javascript:;">专业音频</a>
+                    		</li><br/><br/>
+                    		<li>
+                    			<span>智能设备&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">智能手环</a>
+                    			<a href="javascript:;">智能手表</a>
+                    			<a href="javascript:;">智能眼镜</a>
+                    			<a href="javascript:;">智能机器人</a>
+                    			<a href="javascript:;">运动跟踪器</a>
+                    			<a href="javascript:;">健康监测</a>
+                    			<a href="javascript:;">智能配饰</a>
+                    			<a href="javascript:;">智能家居</a>
+                    			<a href="javascript:;">体感车</a>
+                    			<a href="javascript:;" class="br">无人机</a>
+                    			<a href="javascript:;">其他配件</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>电子教育&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">学生平板</a>
+                    			<a href="javascript:;">点读机/笔</a>
+                    			<a href="javascript:;">早教益智</a>
+                    			<a href="javascript:;">录音笔</a>
+                    			<a href="javascript:;">电纸书</a>
+                    			<a href="javascript:;">电子词典</a>
+                    			<a href="javascript:;">复读机</a>
+                    		</li><br/>
+                    	</ul>
+                    </li>
+                    <li class="dropdown">医药保健<span class="dropdown-arrow">&gt;</span>
+                    	<ul class="dropdown-layer">
+                    		<li>
+                    			<span>电器&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">手机</a>
+                    			<a href="javascript:;">对讲机</a>
+                    			<a href="javascript:;">以旧换新</a>
+                    			<a href="javascript:;">手机维修</a>
+                    		</li><br/><br/>
+                    		<li>
+                    			<span>冰箱&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">充话费/流量</a>
+                    			<a href="javascript:;">170选号</a>
+                    			<a href="javascript:;">合约机</a>
+                    			<a href="javascript:;">办套餐</a>
+                    			<a href="javascript:;">选号码</a>
+                    			<a href="javascript:;">固话宽带</a>
+                    			<a href="javascript:;">京东通信</a>
+                    			<a href="javascript:;">中国移动</a>
+                    			<a href="javascript:;">中国联通</a>
+                    			<a href="javascript:;" class="br">中国电信</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>洗衣机&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">手机壳</a>
+                    			<a href="javascript:;">贴膜</a>
+                    			<a href="javascript:;">手机存储卡</a>
+                    			<a href="javascript:;">数据线</a>
+                    			<a href="javascript:;">充电器</a>
+                    			<a href="javascript:;">手机耳机</a>
+                    			<a href="javascript:;">创意配件</a>
+                    			<a href="javascript:;">手机饰品</a>
+                    			<a href="javascript:;">手机电池</a>
+                    			<a href="javascript:;">苹果周边</a>
+                    			<a href="javascript:;" class="br">移动电源</a>
+                    			<a href="javascript:;">蓝牙耳机</a>
+                    			<a href="javascript:;">手机支架</a>
+                    			<a href="javascript:;">车载配件</a>
+                    			<a href="javascript:;">拍照配件</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>电脑&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">数码相机</a>
+                    			<a href="javascript:;">单电/微单相机</a>
+                    			<a href="javascript:;">单反相机</a>
+                    			<a href="javascript:;">拍立得</a>
+                    			<a href="javascript:;">运动相机</a>
+                    			<a href="javascript:;">摄像机</a>
+                    			<a href="javascript:;">镜头</a>
+                    			<a href="javascript:;">户外器材</a>
+                    			<a href="javascript:;">影棚器材</a>
+                    			<a href="javascript:;" class="br">冲印服务</a>
+                    			<a href="javascript:;">数码相框</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>微波炉&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">储存卡</a>
+                    			<a href="javascript:;">三脚架/云台</a>
+                    			<a href="javascript:;">相机包</a>
+                    			<a href="javascript:;">滤镜</a>
+                    			<a href="javascript:;">闪光灯/手柄</a>
+                    			<a href="javascript:;">相机清洁/贴膜</a>
+                    			<a href="javascript:;">机身附件</a>
+                    			<a href="javascript:;">镜头附件</a>
+                    			<a href="javascript:;">读卡器</a>
+                    			<a href="javascript:;" class="br">支架</a>
+                    			<a href="javascript:;">电池/充电器</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>开水壶&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">耳机/耳麦</a>
+                    			<a href="javascript:;">音箱/音响</a>
+                    			<a href="javascript:;">便携/无线音箱</a>
+                    			<a href="javascript:;">收音机</a>
+                    			<a href="javascript:;">麦克风</a>
+                    			<a href="javascript:;">MP3/MP4</a>
+                    			<a href="javascript:;">专业音频</a>
+                    		</li><br/><br/>
+                    		<li>
+                    			<span>吹风机&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">智能手环</a>
+                    			<a href="javascript:;">智能手表</a>
+                    			<a href="javascript:;">智能眼镜</a>
+                    			<a href="javascript:;">智能机器人</a>
+                    			<a href="javascript:;">运动跟踪器</a>
+                    			<a href="javascript:;">健康监测</a>
+                    			<a href="javascript:;">智能配饰</a>
+                    			<a href="javascript:;">智能家居</a>
+                    			<a href="javascript:;">体感车</a>
+                    			<a href="javascript:;" class="br">无人机</a>
+                    			<a href="javascript:;">其他配件</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>缝纫机&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">学生平板</a>
+                    			<a href="javascript:;">点读机/笔</a>
+                    			<a href="javascript:;">早教益智</a>
+                    			<a href="javascript:;">录音笔</a>
+                    			<a href="javascript:;">电纸书</a>
+                    			<a href="javascript:;">电子词典</a>
+                    			<a href="javascript:;">复读机</a>
+                    		</li><br/>
+                    	</ul>
+                    </li>
+                    <li class="dropdown">图书、音像、电子书<span class="dropdown-arrow">&gt;</span>
+                    	<ul class="dropdown-layer">
+                    		<li>
+                    			<span>手机通讯&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">手机</a>
+                    			<a href="javascript:;">对讲机</a>
+                    			<a href="javascript:;">以旧换新</a>
+                    			<a href="javascript:;">手机维修</a>
+                    		</li><br/><br/>
+                    		<li>
+                    			<span>运营商&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">充话费/流量</a>
+                    			<a href="javascript:;">170选号</a>
+                    			<a href="javascript:;">合约机</a>
+                    			<a href="javascript:;">办套餐</a>
+                    			<a href="javascript:;">选号码</a>
+                    			<a href="javascript:;">固话宽带</a>
+                    			<a href="javascript:;">京东通信</a>
+                    			<a href="javascript:;">中国移动</a>
+                    			<a href="javascript:;">中国联通</a>
+                    			<a href="javascript:;" class="br">中国电信</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>手机配件&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">手机壳</a>
+                    			<a href="javascript:;">贴膜</a>
+                    			<a href="javascript:;">手机存储卡</a>
+                    			<a href="javascript:;">数据线</a>
+                    			<a href="javascript:;">充电器</a>
+                    			<a href="javascript:;">手机耳机</a>
+                    			<a href="javascript:;">创意配件</a>
+                    			<a href="javascript:;">手机饰品</a>
+                    			<a href="javascript:;">手机电池</a>
+                    			<a href="javascript:;">苹果周边</a>
+                    			<a href="javascript:;" class="br">移动电源</a>
+                    			<a href="javascript:;">蓝牙耳机</a>
+                    			<a href="javascript:;">手机支架</a>
+                    			<a href="javascript:;">车载配件</a>
+                    			<a href="javascript:;">拍照配件</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>摄影摄像&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">数码相机</a>
+                    			<a href="javascript:;">单电/微单相机</a>
+                    			<a href="javascript:;">单反相机</a>
+                    			<a href="javascript:;">拍立得</a>
+                    			<a href="javascript:;">运动相机</a>
+                    			<a href="javascript:;">摄像机</a>
+                    			<a href="javascript:;">镜头</a>
+                    			<a href="javascript:;">户外器材</a>
+                    			<a href="javascript:;">影棚器材</a>
+                    			<a href="javascript:;" class="br">冲印服务</a>
+                    			<a href="javascript:;">数码相框</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>数码配件&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">储存卡</a>
+                    			<a href="javascript:;">三脚架/云台</a>
+                    			<a href="javascript:;">相机包</a>
+                    			<a href="javascript:;">滤镜</a>
+                    			<a href="javascript:;">闪光灯/手柄</a>
+                    			<a href="javascript:;">相机清洁/贴膜</a>
+                    			<a href="javascript:;">机身附件</a>
+                    			<a href="javascript:;">镜头附件</a>
+                    			<a href="javascript:;">读卡器</a>
+                    			<a href="javascript:;" class="br">支架</a>
+                    			<a href="javascript:;">电池/充电器</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>影音娱乐&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">耳机/耳麦</a>
+                    			<a href="javascript:;">音箱/音响</a>
+                    			<a href="javascript:;">便携/无线音箱</a>
+                    			<a href="javascript:;">收音机</a>
+                    			<a href="javascript:;">麦克风</a>
+                    			<a href="javascript:;">MP3/MP4</a>
+                    			<a href="javascript:;">专业音频</a>
+                    		</li><br/><br/>
+                    		<li>
+                    			<span>智能设备&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">智能手环</a>
+                    			<a href="javascript:;">智能手表</a>
+                    			<a href="javascript:;">智能眼镜</a>
+                    			<a href="javascript:;">智能机器人</a>
+                    			<a href="javascript:;">运动跟踪器</a>
+                    			<a href="javascript:;">健康监测</a>
+                    			<a href="javascript:;">智能配饰</a>
+                    			<a href="javascript:;">智能家居</a>
+                    			<a href="javascript:;">体感车</a>
+                    			<a href="javascript:;" class="br">无人机</a>
+                    			<a href="javascript:;">其他配件</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>电子教育&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">学生平板</a>
+                    			<a href="javascript:;">点读机/笔</a>
+                    			<a href="javascript:;">早教益智</a>
+                    			<a href="javascript:;">录音笔</a>
+                    			<a href="javascript:;">电纸书</a>
+                    			<a href="javascript:;">电子词典</a>
+                    			<a href="javascript:;">复读机</a>
+                    		</li><br/>
+                    	</ul>
+                    </li>
+                    <li class="dropdown">彩票、旅行、充值、票务<span class="dropdown-arrow">&gt;</span>
+                    	<ul class="dropdown-layer">
+                    		<li>
+                    			<span>电器&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">手机</a>
+                    			<a href="javascript:;">对讲机</a>
+                    			<a href="javascript:;">以旧换新</a>
+                    			<a href="javascript:;">手机维修</a>
+                    		</li><br/><br/>
+                    		<li>
+                    			<span>冰箱&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">充话费/流量</a>
+                    			<a href="javascript:;">170选号</a>
+                    			<a href="javascript:;">合约机</a>
+                    			<a href="javascript:;">办套餐</a>
+                    			<a href="javascript:;">选号码</a>
+                    			<a href="javascript:;">固话宽带</a>
+                    			<a href="javascript:;">京东通信</a>
+                    			<a href="javascript:;">中国移动</a>
+                    			<a href="javascript:;">中国联通</a>
+                    			<a href="javascript:;" class="br">中国电信</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>洗衣机&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">手机壳</a>
+                    			<a href="javascript:;">贴膜</a>
+                    			<a href="javascript:;">手机存储卡</a>
+                    			<a href="javascript:;">数据线</a>
+                    			<a href="javascript:;">充电器</a>
+                    			<a href="javascript:;">手机耳机</a>
+                    			<a href="javascript:;">创意配件</a>
+                    			<a href="javascript:;">手机饰品</a>
+                    			<a href="javascript:;">手机电池</a>
+                    			<a href="javascript:;">苹果周边</a>
+                    			<a href="javascript:;" class="br">移动电源</a>
+                    			<a href="javascript:;">蓝牙耳机</a>
+                    			<a href="javascript:;">手机支架</a>
+                    			<a href="javascript:;">车载配件</a>
+                    			<a href="javascript:;">拍照配件</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>电脑&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">数码相机</a>
+                    			<a href="javascript:;">单电/微单相机</a>
+                    			<a href="javascript:;">单反相机</a>
+                    			<a href="javascript:;">拍立得</a>
+                    			<a href="javascript:;">运动相机</a>
+                    			<a href="javascript:;">摄像机</a>
+                    			<a href="javascript:;">镜头</a>
+                    			<a href="javascript:;">户外器材</a>
+                    			<a href="javascript:;">影棚器材</a>
+                    			<a href="javascript:;" class="br">冲印服务</a>
+                    			<a href="javascript:;">数码相框</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>微波炉&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">储存卡</a>
+                    			<a href="javascript:;">三脚架/云台</a>
+                    			<a href="javascript:;">相机包</a>
+                    			<a href="javascript:;">滤镜</a>
+                    			<a href="javascript:;">闪光灯/手柄</a>
+                    			<a href="javascript:;">相机清洁/贴膜</a>
+                    			<a href="javascript:;">机身附件</a>
+                    			<a href="javascript:;">镜头附件</a>
+                    			<a href="javascript:;">读卡器</a>
+                    			<a href="javascript:;" class="br">支架</a>
+                    			<a href="javascript:;">电池/充电器</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>开水壶&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">耳机/耳麦</a>
+                    			<a href="javascript:;">音箱/音响</a>
+                    			<a href="javascript:;">便携/无线音箱</a>
+                    			<a href="javascript:;">收音机</a>
+                    			<a href="javascript:;">麦克风</a>
+                    			<a href="javascript:;">MP3/MP4</a>
+                    			<a href="javascript:;">专业音频</a>
+                    		</li><br/><br/>
+                    		<li>
+                    			<span>吹风机&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">智能手环</a>
+                    			<a href="javascript:;">智能手表</a>
+                    			<a href="javascript:;">智能眼镜</a>
+                    			<a href="javascript:;">智能机器人</a>
+                    			<a href="javascript:;">运动跟踪器</a>
+                    			<a href="javascript:;">健康监测</a>
+                    			<a href="javascript:;">智能配饰</a>
+                    			<a href="javascript:;">智能家居</a>
+                    			<a href="javascript:;">体感车</a>
+                    			<a href="javascript:;" class="br">无人机</a>
+                    			<a href="javascript:;">其他配件</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>缝纫机&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">学生平板</a>
+                    			<a href="javascript:;">点读机/笔</a>
+                    			<a href="javascript:;">早教益智</a>
+                    			<a href="javascript:;">录音笔</a>
+                    			<a href="javascript:;">电纸书</a>
+                    			<a href="javascript:;">电子词典</a>
+                    			<a href="javascript:;">复读机</a>
+                    		</li><br/>
+                    	</ul>
+                    </li>
+                    <li class="dropdown">理财、众筹、白条、保险<span class="dropdown-arrow">&gt;</span>
+                    	<ul class="dropdown-layer">
+                    		<li>
+                    			<span>手机通讯&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">手机</a>
+                    			<a href="javascript:;">对讲机</a>
+                    			<a href="javascript:;">以旧换新</a>
+                    			<a href="javascript:;">手机维修</a>
+                    		</li><br/><br/>
+                    		<li>
+                    			<span>运营商&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">充话费/流量</a>
+                    			<a href="javascript:;">170选号</a>
+                    			<a href="javascript:;">合约机</a>
+                    			<a href="javascript:;">办套餐</a>
+                    			<a href="javascript:;">选号码</a>
+                    			<a href="javascript:;">固话宽带</a>
+                    			<a href="javascript:;">京东通信</a>
+                    			<a href="javascript:;">中国移动</a>
+                    			<a href="javascript:;">中国联通</a>
+                    			<a href="javascript:;" class="br">中国电信</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>手机配件&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">手机壳</a>
+                    			<a href="javascript:;">贴膜</a>
+                    			<a href="javascript:;">手机存储卡</a>
+                    			<a href="javascript:;">数据线</a>
+                    			<a href="javascript:;">充电器</a>
+                    			<a href="javascript:;">手机耳机</a>
+                    			<a href="javascript:;">创意配件</a>
+                    			<a href="javascript:;">手机饰品</a>
+                    			<a href="javascript:;">手机电池</a>
+                    			<a href="javascript:;">苹果周边</a>
+                    			<a href="javascript:;" class="br">移动电源</a>
+                    			<a href="javascript:;">蓝牙耳机</a>
+                    			<a href="javascript:;">手机支架</a>
+                    			<a href="javascript:;">车载配件</a>
+                    			<a href="javascript:;">拍照配件</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>摄影摄像&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">数码相机</a>
+                    			<a href="javascript:;">单电/微单相机</a>
+                    			<a href="javascript:;">单反相机</a>
+                    			<a href="javascript:;">拍立得</a>
+                    			<a href="javascript:;">运动相机</a>
+                    			<a href="javascript:;">摄像机</a>
+                    			<a href="javascript:;">镜头</a>
+                    			<a href="javascript:;">户外器材</a>
+                    			<a href="javascript:;">影棚器材</a>
+                    			<a href="javascript:;" class="br">冲印服务</a>
+                    			<a href="javascript:;">数码相框</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>数码配件&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">储存卡</a>
+                    			<a href="javascript:;">三脚架/云台</a>
+                    			<a href="javascript:;">相机包</a>
+                    			<a href="javascript:;">滤镜</a>
+                    			<a href="javascript:;">闪光灯/手柄</a>
+                    			<a href="javascript:;">相机清洁/贴膜</a>
+                    			<a href="javascript:;">机身附件</a>
+                    			<a href="javascript:;">镜头附件</a>
+                    			<a href="javascript:;">读卡器</a>
+                    			<a href="javascript:;" class="br">支架</a>
+                    			<a href="javascript:;">电池/充电器</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>影音娱乐&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">耳机/耳麦</a>
+                    			<a href="javascript:;">音箱/音响</a>
+                    			<a href="javascript:;">便携/无线音箱</a>
+                    			<a href="javascript:;">收音机</a>
+                    			<a href="javascript:;">麦克风</a>
+                    			<a href="javascript:;">MP3/MP4</a>
+                    			<a href="javascript:;">专业音频</a>
+                    		</li><br/><br/>
+                    		<li>
+                    			<span>智能设备&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">智能手环</a>
+                    			<a href="javascript:;">智能手表</a>
+                    			<a href="javascript:;">智能眼镜</a>
+                    			<a href="javascript:;">智能机器人</a>
+                    			<a href="javascript:;">运动跟踪器</a>
+                    			<a href="javascript:;">健康监测</a>
+                    			<a href="javascript:;">智能配饰</a>
+                    			<a href="javascript:;">智能家居</a>
+                    			<a href="javascript:;">体感车</a>
+                    			<a href="javascript:;" class="br">无人机</a>
+                    			<a href="javascript:;">其他配件</a><br/>
+                    		</li><br/>
+                    		<li>
+                    			<span>电子教育&nbsp;&nbsp;&nbsp;&nbsp;丨</span>
+                    			<a href="javascript:;">学生平板</a>
+                    			<a href="javascript:;">点读机/笔</a>
+                    			<a href="javascript:;">早教益智</a>
+                    			<a href="javascript:;">录音笔</a>
+                    			<a href="javascript:;">电纸书</a>
+                    			<a href="javascript:;">电子词典</a>
+                    			<a href="javascript:;">复读机</a>
+                    		</li><br/>
+                    	</ul>
+                    </li>
+                </ul>
+				</div>
+				<!-- 右侧侧边栏 -->
+				<aside>
+					<div class="aside-news">
+                    	<div class="aside-news-head">
+                        	<h2 class="aside-news-title">淘快报</h2>
+                        	<a href="###" target="_blank">更多 &gt;</a>
+                    	</div>
+                    	<div class="aside-news-body">
+                        	<p class="aside-news-text">
+                            	<a href="###" target="_blank"><strong>[特惠]</strong> 精选图书每满150减50</a>
+                        	</p>
+                        	<p class="aside-news-text">
+                            	<a href="###" target="_blank"><strong>[公告]</strong> 因广州图书仓搬仓升级配送延迟</a>
+                        	</p>
+                        	<p class="aside-news-text">
+                            	<a href="###" target="_blank"><strong>[特惠]</strong> 爆款手机12期免息</a>
+                        	</p>
+                        	<p class="aside-news-text">
+                            	<a href="###" target="_blank"><strong>[公告]</strong> 广东、福建受台风影响配送延迟</a>
+                        	</p>
+                        	<p class="aside-news-text">
+                            	<a href="###" target="_blank"><strong>[特惠]</strong> 大闸蟹领券满399减180</a>
+                        	</p>
+                    	</div>
+                	</div>
+                	<div class="aside-service">
+                    	<a href="https://wt.taobao.com" target="_blank" class="aside-service-item">
+                        	<i class="fa fa-fax"></i>
+                        	<span class="aside-service-text">话费</span>
+                    	</a>
+                    	<a href="https://www.fliggy.com/jipiao" target="_blank" class="aside-service-item">
+                        	<i class="fa fa-plane"></i>
+                        	<span class="aside-service-text">机票</span>
+                    	</a>
+                    	<a href="https://www.qidian.com/" target="_blank" class="aside-service-item">
+                        	<i class="fa fa-book"></i>
+                        	<span class="aside-service-text">阅读</span>
+                    	</a>
+                    	<a href="https://game.taobao.com" target="_blank" class="aside-service-item">
+                        	<i class="fa fa-keyboard-o"></i>
+                        	<span class="aside-service-text">游戏</span>
+                    	</a>
+                    	<a href="https://uland.taobao.com/sem/tbsearch?refpid=mm_26632360_8858797_29866178&keyword=洗浴套装" target="_blank" class="aside-service-item">
+                        	<i class="fa fa-bath"></i>
+                        	<span class="aside-service-text">洗浴</span>
+                    	</a>
+                    	<a href="https://uland.taobao.com/sem/tbsearch?refpid=mm_26632360_8858797_29866178&keyword=居家家" target="_blank" class="aside-service-item">
+                        	<i class="fa fa-umbrella"></i>
+                        	<span class="aside-service-text">生活</span>
+                    	</a>
+                    	<a href="https://btrip.alitrip.com/jiudian" target="_blank" class="aside-service-item">
+                        	<i class="fa fa-building"></i>
+                        	<span class="aside-service-text">酒店</span>
+                    	</a>
+                    	<a href="https://btrip.alitrip.c om/huochepiao" target="_blank" class="aside-service-item">
+                        	<i class="fa fa-train"></i>
+                        	<span class="aside-service-text">火车票</span>
+                    	</a>
+                    	<a href="https://www.ele.me/home/" target="_blank" class="aside-service-item">
+                        	<i class="fa fa-coffee"></i>
+                        	<span class="aside-service-text">美食</span>
+                    	</a>
+                    	<a href="https://yebprod.alipay.com" target="_blank" class="aside-service-item">
+                        	<i class="fa fa-database"></i>
+                        	<span class="aside-service-text">理财</span>
+                    	</a>
+                    	<a href="http://www.114yygh.com/index.htm" target="_blank" class="aside-service-item">
+                        	<i class="fa fa-medkit"></i>
+                        	<span class="aside-service-text">医药</span>
+                    	</a>
+                    	<a href="https://app.alipay.com/container/web/index.htm" target="_blank" class="aside-service-item">
+                        	<i class="fa fa-question"></i>
+                        	<span class="aside-service-text">找服务</span>
+                    	</a>
+                	</div>
+                	<div class="aside-ad"></div>
+				</aside>
+				<!-- 中间轮播图 -->
+				<div class="middle-slider" id="slider">
+					<div class="middle-slider-container" id="pics">
+                        <a href="###" target="_blank"><img src="img/focus-slider/1.png"/></a>
+                        <a href="###" target="_blank"><img src="img/focus-slider/2.png"/></a>
+                        <a href="###" target="_blank"><img src="img/focus-slider/3.png"/></a>
+                        <a href="###" target="_blank"><img src="img/focus-slider/4.png"/></a>
+                	</div>
+                	<div class="dots" id="dots">
+						<span class="active"></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+                	<a href="javascript:;" id="left" class="slider-control slider-control-left">&lt;</a>
+                	<a href="javascript:;" id="right" class="slider-control slider-control-right">&gt;</a>
+				</div>
+			</div>
+		</section>
+		<!-- 轮播图 -->
+		<section class="lunbo">
+			<div class="lunbo-container">
+				<div class="lunbo-slider">
+                <div class="slider-container">
+                    <div class="slider-item" id="item">
+                        <div><img src="img/todays-slider/1.png" class="slider-img"/></div>
+                        <div><img src="img/todays-slider/2.png" class="slider-img"/></div>
+                        <div><img src="img/todays-slider/3.png" class="slider-img"/></div>
+                        <div><img src="img/todays-slider/4.png" class="slider-img"/></div>
+                        <div><img src="img/todays-slider/5.png" class="slider-img"/></div>
+                        <div><img src="img/todays-slider/6.png" class="slider-img"/></div>
+                        <div><img src="img/todays-slider/7.png" class="slider-img"/></div>
+                        <div><img src="img/todays-slider/8.png" class="slider-img"/></div>
+                        <div><img src="img/todays-slider/9.png" class="slider-img"/></div>
+                        <div><img src="img/todays-slider/10.png" class="slider-img"/></div>
+                    </div>
+                </div>
+                <a href="javascript:;" id="up" class="slider-control slider-control-left">&lt;</a>
+                <a href="javascript:;" id="down" class="slider-control slider-control-right">&gt;</a>
+            	</div>
+			</div>
+		</section>
+		<!-- 楼层区 -->
+		<section class="floor">
+			<!-- floor1 -->
+			<div class="floor-container">
+				<div class="floor-head">
+                	<h2 class="floor-title">
+                		<span class="floor-title-num">1F</span>
+                		<span class="floor-title-text">服装鞋包</span>
+               		</h2>
+               	 	<ul>
+                    	<li class="fortab tab-active"><a href="javascript:;">大牌</a></li>
+                    	<li>丨</li>
+                    	<li class="fortab"><a href="javascript:;">男装</a></li>
+                    	<li>丨</li>
+                    	<li class="fortab"><a href="javascript:;">女装</a></li>
+                	</ul>
+            	</div>	
+            	<div>
+            		<div class="tab-list">
+            			<ul class="tab-panel">
+                    		<li class="floor-item">
+                        		<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/1/1/1.png" class="floor-img"/></a></p>
+                        		<p class="floor-item-name"><a href="###" target="_blank" class="link">匡威男棒球开衫外套2015</a></p>
+                        		<p class="floor-item-price">￥479</p>
+                  		  	</li>
+                  		  	<li class="floor-item">
+                        		<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/1/1/2.png" class="floor-img"/></a></p>
+                        		<p class="floor-item-name"><a href="###" target="_blank" class="link">adidas 阿迪达斯 训练 男子</a></p>
+                        		<p class="floor-item-price">￥335</p>
+                    		</li>
+                    		<li class="floor-item">
+                        		<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/1/1/3.png" class="floor-img"/></a></p>
+                        		<p class="floor-item-name"><a href="###" target="_blank" class="link">必迈BMAI一体织跑步短袖T恤</a></p>
+                        		<p class="floor-item-price">￥159</p>
+                    		</li>
+                    		<li class="floor-item">
+                        		<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/1/1/4.png" class="floor-img"/></a></p>
+                        		<p class="floor-item-name"><a href="###" target="_blank" class="link">NBA袜子半毛圈运动高邦棉袜</a></p>
+                        		<p class="floor-item-price">￥65</p>
+                    		</li>
+                    		<li class="floor-item">
+                        		<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/1/1/5.png" class="floor-img"/></a></p>
+                        		<p class="floor-item-name"><a href="###" target="_blank" class="link">特步官方运动帽男女帽子2016</a></p>
+                        		<p class="floor-item-price">￥69</p>
+                    		</li>
+                    		<li class="floor-item">
+                        		<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/1/1/6.png" class="floor-img"/></a></p>
+                        		<p class="floor-item-name"><a href="###" target="_blank" class="link">KELME足球训练防寒防风手套</a></p>
+                        		<p class="floor-item-price">￥4999</p>
+                    		</li>
+                    		<li class="floor-item">
+                        		<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/1/1/7.png" class="floor-img"/></a></p>
+                        		<p class="floor-item-name"><a href="###" target="_blank" class="link">战地吉普三合一冲锋衣</a></p>
+                        		<p class="floor-item-price">￥289</p>
+                    		</li>
+                    		<li class="floor-item">
+                        		<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/1/1/8.png" class="floor-img"/></a></p>
+                        		<p class="floor-item-name"><a href="###" target="_blank" class="link">探路者户外男士徒步鞋</a></p>
+                        		<p class="floor-item-price">￥369</p>
+                    		</li>
+                    		<li class="floor-item">
+                        		<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/1/1/9.png" class="floor-img"/></a></p>
+                        		<p class="floor-item-name"><a href="###" target="_blank" class="link">羽绒服2015秋冬新款轻薄男士</a></p>
+                        		<p class="floor-item-price">￥399</p>
+                    		</li>
+                    		<li class="floor-item">
+                        		<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/1/1/10.png" class="floor-img"/></a></p>
+                        		<p class="floor-item-name"><a href="###" target="_blank" class="link">溯溪鞋涉水鞋户外鞋</a></p>
+                        		<p class="floor-item-price">￥689</p>
+                    		</li>
+                    		<li class="floor-item">
+                        		<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/1/1/11.png" class="floor-img"/></a></p>
+                        		<p class="floor-item-name"><a href="###" target="_blank" class="link">旅行背包多功能双肩背包</a></p>
+                        		<p class="floor-item-price">￥269</p>
+                    		</li>
+                    		<li class="floor-item">
+                       		 	<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/1/1/12.png" class="floor-img"/></a></p>
+                        		<p class="floor-item-name"><a href="###" target="_blank" class="link">户外旅行双肩背包OS0099</a></p>
+                        		<p class="floor-item-price">￥99</p>
+                    		</li>
+                		</ul>
+            		</div>
+            		<div class="tab-list">
+            			<ul class="tab-panel">
+                   			<li class="floor-item">
+                        		<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/1/2/1.png" class="floor-img"/></a></p>
+                        		<p class="floor-item-name"><a href="###" target="_blank" class="link">匡威男棒球开衫外套2015</a></p>
+                        		<p class="floor-item-price">￥479</p>
+                    		</li>
+                    		<li class="floor-item">
+                        		<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/1/2/2.png" class="floor-img"/></a></p>
+                        		<p class="floor-item-name"><a href="###" target="_blank" class="link">adidas 阿迪达斯 训练 男子</a></p>
+                        		<p class="floor-item-price">￥335</p>
+                    		</li>
+                    		<li class="floor-item">
+                        		<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/1/2/3.png" class="floor-img"/></a></p>
+                        		<p class="floor-item-name"><a href="###" target="_blank" class="link">必迈BMAI一体织跑步短袖T恤</a></p>
+                        		<p class="floor-item-price">￥159</p>
+                    		</li>
+                    		<li class="floor-item">
+                        		<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/1/2/4.png" class="floor-img"/></a></p>
+                        		<p class="floor-item-name"><a href="###" target="_blank" class="link">NBA袜子半毛圈运动高邦棉袜</a></p>
+                        		<p class="floor-item-price">￥65</p>
+                    		</li>
+                    		<li class="floor-item">
+                        		<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/1/2/5.png" class="floor-img"/></a></p>
+                        		<p class="floor-item-name"><a href="###" target="_blank" class="link">特步官方运动帽男女帽子2016</a></p>
+                        		<p class="floor-item-price">￥69</p>
+                    		</li>
+                    		<li class="floor-item">
+                        		<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/1/2/6.png" class="floor-img"/></a></p>
+                        		<p class="floor-item-name"><a href="###" target="_blank" class="link">KELME足球训练防寒防风手套</a></p>
+                        		<p class="floor-item-price">￥4999</p>
+                    		</li>
+                    		<li class="floor-item">
+                        		<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/1/2/7.png" class="floor-img"/></a></p>
+                        		<p class="floor-item-name"><a href="###" target="_blank" class="link">战地吉普三合一冲锋衣</a></p>
+                        		<p class="floor-item-price">￥289</p>
+                    		</li>
+                    		<li class="floor-item">
+                        		<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/1/2/8.png" class="floor-img"/></a></p>
+                        		<p class="floor-item-name"><a href="###" target="_blank" class="link">探路者户外男士徒步鞋</a></p>
+                        		<p class="floor-item-price">￥369</p>
+                    		</li>
+                    		<li class="floor-item">
+                        		<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/1/2/9.png" class="floor-img"/></a></p>
+                        		<p class="floor-item-name"><a href="###" target="_blank" class="link">羽绒服2015秋冬新款轻薄男士</a></p>
+                        		<p class="floor-item-price">￥399</p>
+                    		</li>
+                    		<li class="floor-item">
+                        		<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/1/2/10.png" class="floor-img"/></a></p>
+                        		<p class="floor-item-name"><a href="###" target="_blank" class="link">溯溪鞋涉水鞋户外鞋</a></p>
+                        		<p class="floor-item-price">￥689</p>
+                    		</li>
+                    		<li class="floor-item">
+                        		<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/1/2/11.png" class="floor-img"/></a></p>
+                        		<p class="floor-item-name"><a href="###" target="_blank" class="link">旅行背包多功能双肩背包</a></p>
+                        		<p class="floor-item-price">￥269</p>
+                    		</li>
+                    		<li class="floor-item">
+                        		<p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/1/2/12.png" class="floor-img"/></a></p>
+                        		<p class="floor-item-name"><a href="###" target="_blank" class="link">户外旅行双肩背包OS0099</a></p>
+                        		<p class="floor-item-price">￥99</p>
+                    		</li>
+                		</ul>
+            		</div>
+            		<div class="tab-list">
+            			<ul class="tab-panel">
+                    		<li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/1/3/1.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">匡威男棒球开衫外套2015</a></p>
+		                        <p class="floor-item-price">￥479</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/1/3/2.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">adidas 阿迪达斯 训练 男子</a></p>
+		                        <p class="floor-item-price">￥335</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/1/3/3.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">必迈BMAI一体织跑步短袖T恤</a></p>
+		                        <p class="floor-item-price">￥159</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/1/3/4.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">NBA袜子半毛圈运动高邦棉袜</a></p>
+		                        <p class="floor-item-price">￥65</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/1/3/5.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">特步官方运动帽男女帽子2016</a></p>
+		                        <p class="floor-item-price">￥69</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/1/3/6.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">KELME足球训练防寒防风手套</a></p>
+		                        <p class="floor-item-price">￥4999</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/1/3/7.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">战地吉普三合一冲锋衣</a></p>
+		                        <p class="floor-item-price">￥289</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/1/3/8.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">探路者户外男士徒步鞋</a></p>
+		                        <p class="floor-item-price">￥369</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/1/3/9.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">羽绒服2015秋冬新款轻薄男士</a></p>
+		                        <p class="floor-item-price">￥399</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/1/3/10.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">溯溪鞋涉水鞋户外鞋</a></p>
+		                        <p class="floor-item-price">￥689</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/1/3/11.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">旅行背包多功能双肩背包</a></p>
+		                        <p class="floor-item-price">￥269</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/1/3/12.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">户外旅行双肩背包OS0099</a></p>
+		                        <p class="floor-item-price">￥99</p>
+		                    </li>
+		                </ul>
+            		</div>
+            	</div>
+			</div>
+			<!--floor2 -->
+			<div class="floor-container">
+				<div class="floor-head">
+                	<h2 class="floor-title">
+                		<span class="floor-title-num">2F</span>
+                		<span class="floor-title-text">个护美妆</span>
+               		</h2>
+               	 	<ul>
+                    	<li class="fortab tab-active"><a href="javascript:;">热门</a></li>
+                    	<li>丨</li>
+                    	<li class="fortab"><a href="javascript:;">国际大牌</a></li>
+                    	<li>丨</li>
+                    	<li class="fortab"><a href="javascript:;">国际名品</a></li>
+                	</ul>
+            	</div>
+            	<div>
+            		<div class="tab-list">
+            			<ul class="tab-panel">
+                    		<li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/2/1/1.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">韩束红石榴鲜活水盈七件套装</a></p>
+		                        <p class="floor-item-price">￥169</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/2/1/2.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">温碧泉八杯水亲亲水润五件套装</a></p>
+		                        <p class="floor-item-price">￥198</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/2/1/3.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">御泥坊红酒透亮矿物蚕丝面膜贴</a></p>
+		                        <p class="floor-item-price">￥79.9</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/2/1/4.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">吉列手动剃须刀锋隐致护</a></p>
+		                        <p class="floor-item-price">￥228</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/2/1/5.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">Mediheal水润保湿面膜</a></p>
+		                        <p class="floor-item-price">￥119</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/2/1/6.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">纳益其尔芦荟舒缓保湿凝胶</a></p>
+		                        <p class="floor-item-price">￥39</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/2/1/7.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">宝拉珍选基础护肤旅行四件套</a></p>
+		                        <p class="floor-item-price">￥299</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/2/1/8.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">温碧泉透芯润五件套装</a></p>
+		                        <p class="floor-item-price">￥257</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/2/1/9.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">玉兰油多效修护三部曲套装</a></p>
+		                        <p class="floor-item-price">￥199</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/2/1/10.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">LOREAL火山岩控油清痘洁面膏</a></p>
+		                        <p class="floor-item-price">￥36</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/2/1/11.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">百雀羚水嫩倍现盈透精华水</a></p>
+		                        <p class="floor-item-price">￥139</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/2/1/12.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">珀莱雅新柔皙莹润三件套</a></p>
+		                        <p class="floor-item-price">￥99</p>
+		                    </li>
+		                </ul>
+            		</div>
+            		<div class="tab-list">
+            			<ul class="tab-panel">
+                    		<li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/2/2/1.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">匡威男棒球开衫外套2015</a></p>
+		                        <p class="floor-item-price">￥479</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/2/2/2.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">adidas 阿迪达斯 训练 男子</a></p>
+		                        <p class="floor-item-price">￥335</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/2/2/3.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">必迈BMAI一体织跑步短袖T恤</a></p>
+		                        <p class="floor-item-price">￥159</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/2/2/4.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">NBA袜子半毛圈运动高邦棉袜</a></p>
+		                        <p class="floor-item-price">￥65</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/2/2/5.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">特步官方运动帽男女帽子2016</a></p>
+		                        <p class="floor-item-price">￥69</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/2/2/6.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">KELME足球训练防寒防风手套</a></p>
+		                        <p class="floor-item-price">￥4999</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/2/2/7.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">战地吉普三合一冲锋衣</a></p>
+		                        <p class="floor-item-price">￥289</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/2/2/8.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">探路者户外男士徒步鞋</a></p>
+		                        <p class="floor-item-price">￥369</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/2/2/9.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">羽绒服2015秋冬新款轻薄男士</a></p>
+		                        <p class="floor-item-price">￥399</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/2/2/10.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">溯溪鞋涉水鞋户外鞋</a></p>
+		                        <p class="floor-item-price">￥689</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/2/2/11.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">旅行背包多功能双肩背包</a></p>
+		                        <p class="floor-item-price">￥269</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/2/2/12.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">户外旅行双肩背包OS0099</a></p>
+		                        <p class="floor-item-price">￥99</p>
+		                    </li>
+		                </ul>
+            		</div>
+            		<div class="tab-list">
+            			<ul class="tab-panel">
+                    		<li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/2/3/1.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">匡威男棒球开衫外套2015</a></p>
+		                        <p class="floor-item-price">￥479</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/2/3/2.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">adidas 阿迪达斯 训练 男子</a></p>
+		                        <p class="floor-item-price">￥335</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/2/3/3.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">必迈BMAI一体织跑步短袖T恤</a></p>
+		                        <p class="floor-item-price">￥159</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/2/3/4.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">NBA袜子半毛圈运动高邦棉袜</a></p>
+		                        <p class="floor-item-price">￥65</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/2/3/5.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">特步官方运动帽男女帽子2016</a></p>
+		                        <p class="floor-item-price">￥69</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/2/3/6.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">KELME足球训练防寒防风手套</a></p>
+		                        <p class="floor-item-price">￥4999</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/2/3/7.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">战地吉普三合一冲锋衣</a></p>
+		                        <p class="floor-item-price">￥289</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/2/3/8.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">探路者户外男士徒步鞋</a></p>
+		                        <p class="floor-item-price">￥369</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/2/3/9.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">羽绒服2015秋冬新款轻薄男士</a></p>
+		                        <p class="floor-item-price">￥399</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/2/3/10.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">溯溪鞋涉水鞋户外鞋</a></p>
+		                        <p class="floor-item-price">￥689</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/2/3/11.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">旅行背包多功能双肩背包</a></p>
+		                        <p class="floor-item-price">￥269</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/2/3/12.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">户外旅行双肩背包OS0099</a></p>
+		                        <p class="floor-item-price">￥99</p>
+		                    </li>
+		                </ul>
+            		</div>
+            	</div>	
+			</div>
+			<!--floor3 -->
+			<div class="floor-container">
+				<div class="floor-head">
+                	<h2 class="floor-title">
+                		<span class="floor-title-num">3F</span>
+                		<span class="floor-title-text">手机通讯</span>
+               		</h2>
+               	 	<ul>
+                    	<li class="fortab tab-active"><a href="javascript:;">热门</a></li>
+                    	<li>丨</li>
+                    	<li class="fortab"><a href="javascript:;">品质优选</a></li>
+                    	<li>丨</li>
+                    	<li class="fortab"><a href="javascript:;">新机尝鲜</a></li>
+                	</ul>
+            	</div>	
+            	<div>
+            		<div class="tab-list">
+            			<ul class="tab-panel">
+                    		<li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/3/1/1.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">摩托罗拉 Moto Z Play</a></p>
+		                        <p class="floor-item-price">￥3999</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/3/1/2.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">Apple iPhone 7 (A1660)</a></p>
+		                        <p class="floor-item-price">￥6188</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/3/1/3.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">小米 Note 全网通 白色</a></p>
+		                        <p class="floor-item-price">￥999</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/3/1/4.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">小米5 全网通 标准版 3GB内存</a></p>
+		                        <p class="floor-item-price">￥1999</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/3/1/5.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">荣耀7i 海岛蓝 移动联通4G手机</a></p>
+		                        <p class="floor-item-price">￥1099</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/3/1/6.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">乐视（Le）乐2（X620）32GB</a></p>
+		                        <p class="floor-item-price">￥1099</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/3/1/7.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">OPPO R9 4GB+64GB内存版</a></p>
+		                        <p class="floor-item-price">￥2499</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/3/1/8.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">魅蓝note3 全网通公开版</a></p>
+		                        <p class="floor-item-price">￥899</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/3/1/9.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">飞利浦 X818 香槟金 全网通4G</a></p>
+		                        <p class="floor-item-price">￥1998</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/3/1/10.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">三星 Galaxy S7（G9300）</a></p>
+		                        <p class="floor-item-price">￥4088</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/3/1/11.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">华为 荣耀7 双卡双待双通</a></p>
+		                        <p class="floor-item-price">￥1128</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/3/1/12.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">努比亚(nubia)Z7Max(NX505J)</a></p>
+		                        <p class="floor-item-price">￥728</p>
+		                    </li>
+		                </ul>
+            		</div>
+            		<div class="tab-list">
+            			<ul class="tab-panel">
+                    		<li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/3/2/1.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">匡威男棒球开衫外套2015</a></p>
+		                        <p class="floor-item-price">￥479</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/3/2/2.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">adidas 阿迪达斯 训练 男子</a></p>
+		                        <p class="floor-item-price">￥335</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/3/2/3.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">必迈BMAI一体织跑步短袖T恤</a></p>
+		                        <p class="floor-item-price">￥159</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/3/2/4.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">NBA袜子半毛圈运动高邦棉袜</a></p>
+		                        <p class="floor-item-price">￥65</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/3/2/5.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">特步官方运动帽男女帽子2016</a></p>
+		                        <p class="floor-item-price">￥69</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/3/2/6.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">KELME足球训练防寒防风手套</a></p>
+		                        <p class="floor-item-price">￥4999</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/3/2/7.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">战地吉普三合一冲锋衣</a></p>
+		                        <p class="floor-item-price">￥289</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/3/2/8.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">探路者户外男士徒步鞋</a></p>
+		                        <p class="floor-item-price">￥369</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/3/2/9.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">羽绒服2015秋冬新款轻薄男士</a></p>
+		                        <p class="floor-item-price">￥399</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/3/2/10.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">溯溪鞋涉水鞋户外鞋</a></p>
+		                        <p class="floor-item-price">￥689</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/3/2/11.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">旅行背包多功能双肩背包</a></p>
+		                        <p class="floor-item-price">￥269</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/3/2/12.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">户外旅行双肩背包OS0099</a></p>
+		                        <p class="floor-item-price">￥99</p>
+		                    </li>
+		                </ul>
+            		</div>
+            		<div class="tab-list">
+            			<ul class="tab-panel">
+                    		<li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/3/3/1.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">匡威男棒球开衫外套2015</a></p>
+		                        <p class="floor-item-price">￥479</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/3/3/2.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">adidas 阿迪达斯 训练 男子</a></p>
+		                        <p class="floor-item-price">￥335</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/3/3/3.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">必迈BMAI一体织跑步短袖T恤</a></p>
+		                        <p class="floor-item-price">￥159</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/3/3/4.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">NBA袜子半毛圈运动高邦棉袜</a></p>
+		                        <p class="floor-item-price">￥65</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/3/3/5.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">特步官方运动帽男女帽子2016</a></p>
+		                        <p class="floor-item-price">￥69</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/3/3/6.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">KELME足球训练防寒防风手套</a></p>
+		                        <p class="floor-item-price">￥4999</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/3/3/7.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">战地吉普三合一冲锋衣</a></p>
+		                        <p class="floor-item-price">￥289</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/3/3/8.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">探路者户外男士徒步鞋</a></p>
+		                        <p class="floor-item-price">￥369</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/3/3/9.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">羽绒服2015秋冬新款轻薄男士</a></p>
+		                        <p class="floor-item-price">￥399</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/3/3/10.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">溯溪鞋涉水鞋户外鞋</a></p>
+		                        <p class="floor-item-price">￥689</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/3/3/11.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">旅行背包多功能双肩背包</a></p>
+		                        <p class="floor-item-price">￥269</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/3/3/12.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">户外旅行双肩背包OS0099</a></p>
+		                        <p class="floor-item-price">￥99</p>
+		                    </li>
+		                </ul>
+            		</div>
+            	</div>	
+			</div>
+			<!--floor4 -->
+			<div class="floor-container">
+				<div class="floor-head">
+                	<h2 class="floor-title">
+                		<span class="floor-title-num">4F</span>
+                		<span class="floor-title-text">家用电器</span>
+               		</h2>
+               	 	<ul>
+                    	<li class="fortab tab-active"><a href="javascript:;">热门</a></li>
+                    	<li>丨</li>
+                    	<li class="fortab"><a href="javascript:;">大家电</a></li>
+                    	<li>丨</li>
+                    	<li class="fortab"><a href="javascript:;">生活电器</a></li>
+                	</ul>
+            	</div>
+            	<div>
+            		<div class="tab-list">
+            			<ul class="tab-panel">
+                    		<li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/4/1/1.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">暴风TV 超体电视 40X 40英寸</a></p>
+		                        <p class="floor-item-price">￥1299</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/4/1/2.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">小米（MI）L55M5-AA 55英寸</a></p>
+		                        <p class="floor-item-price">￥3699</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/4/1/3.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">飞利浦HTD5580/93 音响</a></p>
+		                        <p class="floor-item-price">￥2999</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/4/1/4.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">金门子H108 5.1套装音响组合</a></p>
+		                        <p class="floor-item-price">￥1198</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/4/1/5.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">方太ENJOY云魔方抽油烟机</a></p>
+		                        <p class="floor-item-price">￥4390</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/4/1/6.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">美的60升预约洗浴电热水器</a></p>
+		                        <p class="floor-item-price">￥1099</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/4/1/7.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">九阳电饭煲多功能智能电饭锅</a></p>
+		                        <p class="floor-item-price">￥159</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/4/1/8.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">美的电烤箱家用大容量</a></p>
+		                        <p class="floor-item-price">￥329</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/4/1/9.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">奥克斯(AUX)936破壁料理机</a></p>
+		                        <p class="floor-item-price">￥1599</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/4/1/10.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">飞利浦面条机 HR2356/31</a></p>
+		                        <p class="floor-item-price">￥665</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/4/1/11.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">松下NU-JA100W 家用蒸烤箱</a></p>
+		                        <p class="floor-item-price">￥1799</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/4/1/12.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">飞利浦咖啡机 HD7751/00</a></p>
+		                        <p class="floor-item-price">￥1299</p>
+		                    </li>
+		                </ul>
+            		</div>
+            		<div class="tab-list">
+            			<ul class="tab-panel">
+                    		<li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/4/2/1.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">匡威男棒球开衫外套2015</a></p>
+		                        <p class="floor-item-price">￥479</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/4/2/2.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">adidas 阿迪达斯 训练 男子</a></p>
+		                        <p class="floor-item-price">￥335</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/4/2/3.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">必迈BMAI一体织跑步短袖T恤</a></p>
+		                        <p class="floor-item-price">￥159</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/4/2/4.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">NBA袜子半毛圈运动高邦棉袜</a></p>
+		                        <p class="floor-item-price">￥65</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/4/2/5.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">特步官方运动帽男女帽子2016</a></p>
+		                        <p class="floor-item-price">￥69</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/4/2/6.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">KELME足球训练防寒防风手套</a></p>
+		                        <p class="floor-item-price">￥4999</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/4/2/7.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">战地吉普三合一冲锋衣</a></p>
+		                        <p class="floor-item-price">￥289</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/4/2/8.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">探路者户外男士徒步鞋</a></p>
+		                        <p class="floor-item-price">￥369</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/4/2/9.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">羽绒服2015秋冬新款轻薄男士</a></p>
+		                        <p class="floor-item-price">￥399</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/4/2/10.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">溯溪鞋涉水鞋户外鞋</a></p>
+		                        <p class="floor-item-price">￥689</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/4/2/11.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">旅行背包多功能双肩背包</a></p>
+		                        <p class="floor-item-price">￥269</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/4/2/12.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">户外旅行双肩背包OS0099</a></p>
+		                        <p class="floor-item-price">￥99</p>
+		                    </li>
+		                </ul>
+            		</div>
+            		<div class="tab-list">
+            			<ul class="tab-panel">
+                    		<li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/4/3/1.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">匡威男棒球开衫外套2015</a></p>
+		                        <p class="floor-item-price">￥479</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/4/3/2.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">adidas 阿迪达斯 训练 男子</a></p>
+		                        <p class="floor-item-price">￥335</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/4/3/3.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">必迈BMAI一体织跑步短袖T恤</a></p>
+		                        <p class="floor-item-price">￥159</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/4/3/4.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">NBA袜子半毛圈运动高邦棉袜</a></p>
+		                        <p class="floor-item-price">￥65</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/4/3/5.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">特步官方运动帽男女帽子2016</a></p>
+		                        <p class="floor-item-price">￥69</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/4/3/6.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">KELME足球训练防寒防风手套</a></p>
+		                        <p class="floor-item-price">￥4999</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/4/3/7.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">战地吉普三合一冲锋衣</a></p>
+		                        <p class="floor-item-price">￥289</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/4/3/8.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">探路者户外男士徒步鞋</a></p>
+		                        <p class="floor-item-price">￥369</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/4/3/9.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">羽绒服2015秋冬新款轻薄男士</a></p>
+		                        <p class="floor-item-price">￥399</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/4/3/10.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">溯溪鞋涉水鞋户外鞋</a></p>
+		                        <p class="floor-item-price">￥689</p>
+		                    </li>
+		                    <li class="floor-item"> 
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/4/3/11.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">旅行背包多功能双肩背包</a></p>
+		                        <p class="floor-item-price">￥269</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/4/3/12.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">户外旅行双肩背包OS0099</a></p>
+		                        <p class="floor-item-price">￥99</p>
+		                    </li>
+		                </ul>
+            		</div>
+            	</div>		
+			</div>
+			<!--floor5 -->
+			<div class="floor-container">
+				<div class="floor-head">
+                	<h2 class="floor-title">
+                		<span class="floor-title-num">5F</span>
+                		<span class="floor-title-text">电脑数码</span>
+               		</h2>
+               	 	<ul>
+                    	<li class="fortab tab-active"><a href="javascript:;">热门</a></li>
+                    	<li>丨</li>
+                    	<li class="fortab"><a href="javascript:;">电脑/平板</a></li>
+                    	<li>丨</li>
+                    	<li class="fortab"><a href="javascript:;">潮流影音</a></li>
+                	</ul>
+            	</div>
+            	<div>
+            		<div class="tab-list">
+            			<ul class="tab-panel">
+                    		<li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/5/1/1.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">戴尔成就Vostro 3800-R6308</a></p>
+		                        <p class="floor-item-price">￥2999</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/5/1/2.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">联想IdeaCentre C560</a></p>
+		                        <p class="floor-item-price">￥5399</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/5/1/3.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">惠普260-p039cn台式电脑</a></p>
+		                        <p class="floor-item-price">￥3099</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/5/1/4.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">华硕飞行堡垒旗舰版FX-PRO</a></p>
+		                        <p class="floor-item-price">￥6599</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/5/1/5.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">惠普(HP)暗影精灵II代PLUS</a></p>
+		                        <p class="floor-item-price">￥12999</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/5/1/6.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">联想(Lenovo)小新700电竞版</a></p>
+		                        <p class="floor-item-price">￥5999</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/5/1/7.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">游戏背光牧马人机械手感键盘</a></p>
+		                        <p class="floor-item-price">￥499</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/5/1/8.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">罗技iK1200背光键盘保护套</a></p>
+		                        <p class="floor-item-price">￥799</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/5/1/9.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">西部数据2.5英寸移动硬盘1TB</a></p>
+		                        <p class="floor-item-price">￥419</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/5/1/10.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">新睿翼3TB 2.5英寸 移动硬盘</a></p>
+		                        <p class="floor-item-price">￥849</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/5/1/11.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">Rii mini i28无线迷你键盘鼠标</a></p>
+		                        <p class="floor-item-price">￥349</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/5/1/12.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">罗技G29 力反馈游戏方向盘</a></p>
+		                        <p class="floor-item-price">￥2999</p>
+		                    </li>
+		                </ul>
+            		</div>
+            		<div class="tab-list">
+            			<ul class="tab-panel">
+                   		 	<li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/5/2/1.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">匡威男棒球开衫外套2015</a></p>
+		                        <p class="floor-item-price">￥479</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/5/2/2.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">adidas 阿迪达斯 训练 男子</a></p>
+		                        <p class="floor-item-price">￥335</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/5/2/3.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">必迈BMAI一体织跑步短袖T恤</a></p>
+		                        <p class="floor-item-price">￥159</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/5/2/4.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">NBA袜子半毛圈运动高邦棉袜</a></p>
+		                        <p class="floor-item-price">￥65</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/5/2/5.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">特步官方运动帽男女帽子2016</a></p>
+		                        <p class="floor-item-price">￥69</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/5/2/6.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">KELME足球训练防寒防风手套</a></p>
+		                        <p class="floor-item-price">￥4999</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/5/2/7.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">战地吉普三合一冲锋衣</a></p>
+		                        <p class="floor-item-price">￥289</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/5/2/8.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">探路者户外男士徒步鞋</a></p>
+		                        <p class="floor-item-price">￥369</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/5/2/9.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">羽绒服2015秋冬新款轻薄男士</a></p>
+		                        <p class="floor-item-price">￥399</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/5/2/10.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">溯溪鞋涉水鞋户外鞋</a></p>
+		                        <p class="floor-item-price">￥689</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/5/2/11.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">旅行背包多功能双肩背包</a></p>
+		                        <p class="floor-item-price">￥269</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/5/2/12.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">户外旅行双肩背包OS0099</a></p>
+		                        <p class="floor-item-price">￥99</p>
+		                    </li>
+		                </ul>
+            		</div>
+            		<div class="tab-list">
+            			<ul class="tab-panel">
+                    		<li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/5/3/1.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">匡威男棒球开衫外套2015</a></p>
+		                        <p class="floor-item-price">￥479</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/5/3/2.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">adidas 阿迪达斯 训练 男子</a></p>
+		                        <p class="floor-item-price">￥335</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/5/3/3.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">必迈BMAI一体织跑步短袖T恤</a></p>
+		                        <p class="floor-item-price">￥159</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/5/3/4.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">NBA袜子半毛圈运动高邦棉袜</a></p>
+		                        <p class="floor-item-price">￥65</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/5/3/5.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">特步官方运动帽男女帽子2016</a></p>
+		                        <p class="floor-item-price">￥69</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/5/3/6.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">KELME足球训练防寒防风手套</a></p>
+		                        <p class="floor-item-price">￥4999</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/5/3/7.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">战地吉普三合一冲锋衣</a></p>
+		                        <p class="floor-item-price">￥289</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/5/3/8.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">探路者户外男士徒步鞋</a></p>
+		                        <p class="floor-item-price">￥369</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/5/3/9.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">羽绒服2015秋冬新款轻薄男士</a></p>
+		                        <p class="floor-item-price">￥399</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/5/3/10.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">溯溪鞋涉水鞋户外鞋</a></p>
+		                        <p class="floor-item-price">￥689</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/5/3/11.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">旅行背包多功能双肩背包</a></p>
+		                        <p class="floor-item-price">￥269</p>
+		                    </li>
+		                    <li class="floor-item">
+		                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/5/3/12.png" class="floor-img"/></a></p>
+		                        <p class="floor-item-name"><a href="###" target="_blank" class="link">户外旅行双肩背包OS0099</a></p>
+		                        <p class="floor-item-price">￥99</p>
+		                    </li>
+		                </ul>
+            		</div>
+            	</div>		
+			</div>
+			<div style="height:1px"></div>
+		</section>
+	</section>
+	<!-- 友情链接区 -->
+	<section class="com">
+		<div class="com-container">
+			<div class="com-block">
+				<div class="com-title"><i class="fa fa-shield"></i> 消费者保障</div>
+				<div class="com-text">
+					<a href="https://www.taobao.com/market/xiaobao/xbintro2.php" target="_blank">保障范围</a>
+					<a href="https://consumerservice.taobao.com/self-help#page=issue-detail&knowledgeId=1119776" target="_blank">退货退款流程</a>
+					<a href="https://consumerservice.taobao.com/" target="_blank">服务中心</a>
+				</div>
+				<div class="com-text">
+					<a href="https://www.taobao.com/market/xiaobao/xbintro2.php" target="_blank">更多特色服务</a>
+				</div>
+			</div>
+			<div class="com-block">
+				<div class="com-title"><i class="fa fa-question-circle"></i> 新手上路</div>
+				<div class="com-text">
+					<a href="https://new.taobao.com/" target="_blank">新手专区</a>
+					<a href="http://315.taobao.com/" target="_blank">消费警示</a>
+					<a href="https://safe.bbs.taobao.com/" target="_blank">交易安全</a>
+				</div>
+				<div class="com-text">
+					<a href="https://h5.m.taobao.com/alicare/alicarePC.html?from=tb_new_comers" target="_blank">24小时在线帮助</a>
+					<a href="https://openshop.taobao.com/index.htm" target="_blank">免费开店</a>
+				</div>
+			</div>
+			<div class="com-block">
+				<div class="com-title"><i class="fa fa-credit-card"></i> 付款方式</div>
+				<div class="com-text">
+					<a href="https://payservice.alipay.com/intro/index.htm?c=kjzf" target="_blank">快捷支付</a>
+					<a href="https://payservice.alipay.com/intro/index.htm?c=xyk" target="_blank">信用卡</a>
+					<a href="https://payservice.alipay.com/intro/index.htm?c=yeb" target="_blank">余额宝</a>
+					<a href="https://payservice.alipay.com/intro/index.htm?c=hb" target="_blank">蚂蚁花呗</a>
+				</div>
+				<div class="com-text">
+					<a href="https://www.taobao.com/go/chn/tb-fp/2014/tbcod.php" target="_blank">货到付款</a>
+				</div>
+			</div>
+			<div class="com-block">
+				<div class="com-title"><i class="fa fa-binoculars"></i> 淘宝特色</div>
+				<div class="com-text">
+					<a href="https://mpage.taobao.com/hd/download.html" target="_blank">手机淘宝</a>
+					<a href="https://alimarket.taobao.com/markets/qnww/portal-group/ww/index" target="_blank">旺旺/旺信</a>
+					<a href="https://pan.taobao.com/" target="_blank">大众评审</a>
+				</div>
+				<div class="com-text"></div>
+			</div>
+		</div>
+	</section>	
+	<!-- 底部导航 -->
+	<nav>
+		<div class="bottom-container">
+			<ul class="bottom-nav-ul">
+				<li><a href="https://www.alibabagroup.com/cn/global/home" target="_blank">阿里巴巴集团</a></li>
+				<li>丨</li>
+				<li><a href="https://www.taobao.com/" target="_blank">淘宝网</a></li>
+				<li>丨</li>
+				<li><a href="https://www.tmall.com/" target="_blank">天猫</a></li>
+				<li>丨</li>
+				<li><a href="https://ju.taobao.com/" target="_blank">聚划算</a></li>
+				<li>丨</li>
+				<li><a href="https://www.aliexpress.com/" target="_blank">全球速卖通</a></li>
+				<li>丨</li>
+				<li><a href="https://www.alibaba.com/" target="_blank">阿里巴巴国际交易市场</a></li>
+				<li>丨</li>
+				<li><a href="https://www.1688.com/" target="_blank">1688</a></li>
+				<li>丨</li>
+				<li><a href="https://www.alimama.com/" target="_blank">阿里妈妈</a></li>
+				<li>丨</li>
+				<li><a href="https://www.fliggy.com/" target="_blank">飞猪</a></li>
+				<li>丨</li>
+				<li><a href="https://www.aliyun.com/" target="_blank">阿里云计算</a></li>
+				<li>丨</li>
+				<li><a href="http://www.alios.cn/" target="_blank">AliOS</a></li>
+				<li>丨</li>
+				<li><a href="https://aliqin.tmall.com/" target="_blank">阿里通信</a></li>
+				<li>丨</li>
+				<li><a href="https://www.etao.com/" target="_blank">一淘</a></li>
+				<li>丨</li>
+				<li><a href="https://wanwang.aliyun.com/" target="_blank">万网</a></li>
+				<li>丨</li>
+				<li><a href="https://mobile.amap.com/" target="_blank">高德</a></li>
+				<li>丨</li>
+				<li><a href="https://www.uc.cn/" target="_blank">UC</a></li>
+				<li>丨</li>
+				<li><a href="https://www.umeng.com/" target="_blank">友盟</a></li>
+			</ul>
+			<br/>
+			<ul class="bottom-nav-ul">
+				<li><a href="https://www.xiami.com/" target="_blank">虾米</a></li>
+				<li>丨</li>
+				<li><a href="https://www.damai.cn/" target="_blank">大麦网</a></li>
+				<li>丨</li>
+				<li><a href="https://www.dingtalk.com/" target="_blank">钉钉</a></li>
+				<li>丨</li>
+				<li><a href="https://www.alipay.com/" target="_blank">支付宝</a></li>
+				<li>丨</li>
+				<li><a href="https://www.youku.com/" target="_blank">优酷</a></li>
+				<li>丨</li>
+				<li><a href="https://www.tudou.com/" target="_blank">土豆</a></li>
+				<li>丨</li>
+				<li><a href="https://www.alihealth.cn/" target="_blank">阿里健康</a></li>
+				<li>丨</li>
+				<li><a href="http://www.alibabapictures.com/" target="_blank">阿里影业</a></li>
+				<li>丨</li>
+				<li><a href="https://www.alisports.com/" target="_blank">阿里体育</a></li>
+				<li>丨</li>
+				<li><a href="https://www.mybank.cn/" target="_blank">网商银行</a></li>
+			</ul>
+		</div>
+	</nav>
+	<!-- 脚部 -->
+	<footer>
+		<div class="footer-container">
+			<ul class="footer-ul">
+				<li><a href="https://www.taobao.com/tbhome/page/about/home" target="_blank">关于淘宝</a></li>
+				<li><a href="https://www.taobao.com/tbhome/page/about/partner" target="_blank">合作伙伴</a></li>
+				<li><a href="https://pro.taobao.com/index.htm" target="_blank">营销中心</a></li>
+				<li><a href="https://jubao.alibaba.com/internet/readme.htm" target="_blank">廉正举报</a></li>
+				<li><a href="https://consumerservice.taobao.com/" target="_blank">联系客服</a></li>
+				<li><a href="https://open.taobao.com/" target="_blank">开放平台</a></li>
+				<li><a href="https://job.alibaba.com/zhaopin/index.htm" target="_blank">诚征英才</a></li>
+				<li><a href="https://consumerservice.taobao.com/contact-us" target="_blank">联系我们</a></li>
+				<li><a href="https://www.taobao.com/tbhome/page/sitemap" target="_blank">网站地图</a></li>
+				<li><a href="https://terms.alicdn.com/legal-agreement/terms/suit_bu1_taobao/suit_bu1_taobao201703241622_61002.html" target="_blank">隐私权政策</a></li>
+				<li><a href="https://terms.alicdn.com/legal-agreement/terms/suit_bu1_taobao/suit_bu1_taobao201811121436_80276.html" target="_blank">法律声明</a></li>
+				<li><a href="https://ipp.alibabagroup.com/" target="_blank">知识产权</a></li>
+				<li>丨</li>
+				<li class="footer-ul-p">&copy;2003-现在&nbsp;Taobao.com&nbsp;版权所有</li>
+			</ul>
+			<br/>
+			<ul class="footer-ul">
+				<li><a href="http://zcainfo.miitbeian.gov.cn/state/outPortal/loginPortal.action" target="_blank">增值电信业务经营许可证：浙B2-20080224</a></li>
+				<li>丨</li>
+				<li><a href="http://zcainfo.miitbeian.gov.cn/state/outPortal/loginPortal.action" target="_blank">增值电信业务经营许可证（跨地区）：B2-20150210</a></li>
+				<li>丨</li>
+				<li><a href="http://sq.ccm.gov.cn/ccnt/sczr/service/business/emark/toDetail/2E7819FC84674D5980464916C24B7E3E" target="_blank">网络文化经营许可证：浙网文[2016]0268-027号</a></li>
+				<li>丨</li>
+				<li class="footer-ul-text">浙江省网络食品销售第三方平台提供者备案：浙网食A33010001</li>
+			</ul>
+			<br/>
+			<ul class="footer-ul">
+				<li><a href="https://files.alicdn.com/tpsservice/047e589906345d5e04ccba6f26efbb0f.pdf" target="_blank">互联网药品信息服务资格证书（浙）-经营性-2018-0010</a></li>
+				<li>丨</li>
+				<li class="footer-ul-text">短消息类服务接入代码使用证书：号【2016】00154-A01</li>
+				<li>丨</li>
+				<li class="footer-ul-text">信息网络传播视听许可证：1109364号</li>
+				<li>丨</li>
+				<li><a href="https://files.alicdn.com/tpsservice/2cbfc46d22ce151892d2ad3298ee0afc.pdf" target="_blank">出版物网络交易平台服务经营备案号：新出发浙备字第002号</a></li>
+			</ul>
+			<br/>
+			<ul class="footer-ul">
+				<li><a href="http://www.beian.gov.cn/portal/registerSystemInfo?spm=a21bo.2017.1997523009.45.5af911d9Hy8oRD&recordcode=33010002000078" target="_blank"><i class="fa fa-universal-access"></i> 浙公网安备 33010002000078号</a></li>
+				<li>丨</li>
+				<li class="footer-ul-text">广播电视节目制作经营许可证（浙）字第01012号</li>
+				<li>丨</li>
+				<li class="footer-ul-text">市场名称登记证：工商网市字3301004120号</li>
+				<li>丨</li>
+				<li class="footer-ul-text">医疗器械网络交易服务第三方平台备案：（浙）网械平台备字[2018]第00004号</li>
+			</ul>
+		</div>
+	</footer>
+	<!-- 电梯 -->
+	<section class="elevator">
+		<a href="javascript:;" class="elevator-item">
+            <span class="elevator-num">F1</span>
+            <span class="elevator-text">服饰</span>
+        </a>
+        <a href="javascript:;" class="elevator-item">
+            <span class="elevator-num">F2</span>
+            <span class="elevator-text">美妆</span>
+        </a>
+        <a href="javascript:;" class="elevator-item">
+            <span class="elevator-num">F3</span>
+            <span class="elevator-text">手机</span>
+        </a>
+        <a href="javascript:;" class="elevator-item">
+            <span class="elevator-num">F4</span>
+            <span class="elevator-text">家电</span>
+        </a>
+        <a href="javascript:;" class="elevator-item">
+            <span class="elevator-num">F5</span>
+            <span class="elevator-text">数码</span>
+        </a>
+	</section>
+	<!-- 侧栏工具条 -->
+	<section class="toolbar">
+		<a href="javascript:;" class="toolbar-item">
+            <i class="fa fa-user-o"></i>
+            <span class="toolbar-text">会员</span>
+        </a>
+        <a href="javascript:;" class="toolbar-item">
+            <i class="fa fa-shopping-cart"></i>
+            <span class="toolbar-text">购物车</span>
+        </a>
+        <a href="javascript:;" class="toolbar-item">
+            <i class="fa fa-heart-o"></i>
+            <span class="toolbar-text">我的关注</span>
+        </a>
+        <a href="javascript:;" class="toolbar-item">
+            <i class="fa fa-commenting-o"></i>
+            <span class="toolbar-text">我的消息</span>
+        </a>
+        <a href="#" class="toolbar-item">
+            <i class="fa fa-chevron-up"></i>
+            <span class="toolbar-text">顶部</span>
+        </a>
+	</section>
+	<script src="https://use.fontawesome.com/ce21ee1997.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
